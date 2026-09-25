@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="or">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Algebra</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Oriya:wght@400;600;700&family=Noto+Sans:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <ol>
+<li class="crumb-class"><span>Class 10</span></li><li class="crumb-subject" aria-current="page"><span>Algebra</span></li>    </ol>
+  </nav>
+</header>
+<main>
+<header class="chapter-head chapter-band">
+  <h1 class="chapter-title">Algebra</h1>
+  <p class="meta">Class 10</p>
+</header>
+<ol class="toc">
+  <li value="1">
+    <a href="chapter-01-linear-simultaneous-equations/content.html"><strong>ସରଳ ସହସମୀକରଣ</strong> <span class="gloss">Linear Simultaneous Equations</span></a>
+<span class="toc-ex"><span><a href="chapter-01-linear-simultaneous-equations/exercises/exercise-1a/exercise.html">ଅନୁଶୀଳନୀ - 1(a)</a> · <a class="toc-result" href="chapter-01-linear-simultaneous-equations/exercises-result/exercise-1a/result.html">ସମାଧାନ</a></span><span><a href="chapter-01-linear-simultaneous-equations/exercises/exercise-1b/exercise.html">ଅନୁଶୀଳନୀ – 1 (b)</a> · <a class="toc-result" href="chapter-01-linear-simultaneous-equations/exercises-result/exercise-1b/result.html">ସମାଧାନ</a></span><span><a href="chapter-01-linear-simultaneous-equations/exercises/exercise-1c/exercise.html">ଅନୁଶୀଳନୀ – 1 (c)</a> · <a class="toc-result" href="chapter-01-linear-simultaneous-equations/exercises-result/exercise-1c/result.html">ସମାଧାନ</a></span></span>  </li>
+  <li value="2" class="pending"><strong>ଦ୍ୱିଘାତ ସମୀକରଣ</strong> <span class="gloss">not extracted yet</span></li>
+  <li value="3" class="pending"><strong>ସମାନ୍ତର ପ୍ରଗତି</strong> <span class="gloss">not extracted yet</span></li>
+  <li value="4" class="pending"><strong>ସମ୍ଭାବ୍ୟତା</strong> <span class="gloss">not extracted yet</span></li>
+  <li value="5" class="pending"><strong>ପରିସଂଖ୍ୟାନ</strong> <span class="gloss">not extracted yet</span></li>
+  <li value="6" class="pending"><strong>ସ୍ଥାନାଙ୍କ ଜ୍ୟାମିତି</strong> <span class="gloss">not extracted yet</span></li>
+</ol>
+</main>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script>
+// Chapter menu: close on outside click, Escape or picking an item; mark the current section.
+(function () {
+  var menu = document.querySelector(".crumb-menu");
+  if (!menu) return;
+  document.addEventListener("click", function (e) {
+    if (menu.open && !menu.contains(e.target)) menu.open = false;
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && menu.open) { menu.open = false; menu.querySelector("summary").focus(); }
+  });
+  menu.querySelectorAll(".menu a").forEach(function (a) {
+    a.addEventListener("click", function () { menu.open = false; });
+  });
+  menu.addEventListener("toggle", function () {
+    if (!menu.open) return;
+    var sec = document.querySelector(".crumb-section:not([hidden]) a");
+    var id = sec ? sec.getAttribute("href").slice(1) : null;
+    var current = null;
+    menu.querySelectorAll("li[data-anchor]").forEach(function (li) {
+      var on = li.dataset.anchor === id;
+      li.classList.toggle("current", on);
+      if (on) current = li;
+    });
+    if (current) current.scrollIntoView({ block: "nearest" });
+  });
+})();
+// Last breadcrumb follows the section heading currently at the top of the page.
+(function () {
+  var crumb = document.querySelector(".crumb-section");
+  if (!crumb) return;
+  var heads = Array.prototype.slice.call(document.querySelectorAll("main h2, main h3"));
+  var bar = document.querySelector(".topbar");
+  var ticking = false;
+  function update() {
+    ticking = false;
+    var limit = bar.offsetHeight + 24, current = null;
+    for (var i = 0; i < heads.length; i++) {
+      if (heads[i].getBoundingClientRect().top <= limit) current = heads[i]; else break;
+    }
+    if (current) {
+      crumb.querySelector("a").textContent = current.dataset.short || current.textContent;
+      crumb.querySelector("a").href = "#" + current.id;
+      crumb.hidden = false;
+    } else {
+      crumb.hidden = true;
+    }
+  }
+  window.addEventListener("scroll", function () {
+    if (!ticking) { ticking = true; requestAnimationFrame(update); }
+  }, { passive: true });
+  update();
+})();
+window.addEventListener("load", function () {
+  if (!window.katex) return;
+  document.querySelectorAll(".math[data-tex]").forEach(function (el) {
+    katex.render(el.dataset.tex, el, { displayMode: true, throwOnError: false });
+  });
+  renderMathInElement(document.body, {
+    delimiters: [{ left: "$", right: "$", display: false }],
+    ignoredClasses: ["math"],
+    throwOnError: false
+  });
+});
+</script>
+</body>
+</html>

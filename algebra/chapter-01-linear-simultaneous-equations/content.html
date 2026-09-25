@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="or">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ସରଳ ସହସମୀକରଣ · Algebra</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Oriya:wght@400;600;700&family=Noto+Sans:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="topbar">
+  <nav class="crumbs" aria-label="Breadcrumb">
+    <ol>
+<li class="crumb-class"><span>Class 10</span></li>      <li class="crumb-subject"><a href="../index.html">Algebra</a></li>
+      <li class="crumb-chapter" aria-current="page">
+  <details class="crumb-menu">
+    <summary aria-label="ସରଳ ସହସମୀକରଣ: sections"><span class="crumb-text">1. ସରଳ ସହସମୀକରଣ</span><span class="caret" aria-hidden="true">▾</span></summary>
+    <nav class="menu" aria-label="ସରଳ ସହସମୀକରଣ">
+      <a class="menu-top" href="#top">1. ସରଳ ସହସମୀକରଣ · Linear Simultaneous Equations</a>
+      <hr>
+      <ol>
+        <li class="lvl-2" data-anchor="s-1-1-p7"><a href="#s-1-1-p7">1.1 ଉପକ୍ରମଣିକା</a></li>
+        <li class="lvl-2" data-anchor="s-1-2-p8"><a href="#s-1-2-p8">1.2 ସହ-ସମୀକରଣଦ୍ୱୟର ଜ୍ୟାମିତିକ ପରିପ୍ରକାଶ</a></li>
+        <li class="lvl-2" data-anchor="s-1-3-p9"><a href="#s-1-3-p9">1.3 ଲେଖଚିତ୍ର ଦ୍ୱାରା ସହସମୀକରଣଦ୍ୱୟର ସମାଧାନ</a></li>
+        <li class="lvl-2" data-anchor="s-1-4-p12"><a href="#s-1-4-p12">1.4 ସହସମୀକରଣଦ୍ୱୟର ସମାଧାନ ପାଇଁ ସର୍ତ୍ତ</a></li>
+        <li class="exercise"><a href="exercises/exercise-1a/exercise.html">ଅନୁଶୀଳନୀ - 1(a)</a></li>
+        <li class="result"><a href="exercises-result/exercise-1a/result.html">ସମାଧାନ</a></li>
+        <li class="lvl-2" data-anchor="s-1-2-p16"><a href="#s-1-2-p16">1.2. ସହ ସମୀକରଣଦ୍ୱୟର ବୀଜଗାଣିତିକ ସମାଧାନ</a></li>
+        <li class="lvl-3" data-anchor="s-ii-p17"><a href="#s-ii-p17">(II) ଅପସାରଣ ପଦ୍ଧତି</a></li>
+        <li class="lvl-3" data-anchor="s-iii-p18"><a href="#s-iii-p18">(iii) ବକ୍ର ଗୁଣନ</a></li>
+        <li class="lvl-2" data-anchor="s-1-4-p20"><a href="#s-1-4-p20">1.4. ଅଣ ସରଳରେଖ୍ୟ ସହସମୀକରଣ</a></li>
+        <li class="lvl-3" data-anchor="s-bishess-aaleaacnaa-p21"><a href="#s-bishess-aaleaacnaa-p21">ବିଶେଷ ଆଲୋଚନା</a></li>
+        <li class="exercise"><a href="exercises/exercise-1b/exercise.html">ଅନୁଶୀଳନୀ – 1 (b)</a></li>
+        <li class="result"><a href="exercises-result/exercise-1b/result.html">ସମାଧାନ</a></li>
+        <li class="lvl-2" data-anchor="s-1-7-p24"><a href="#s-1-7-p24">1.7 ପାଟିଗଣିତ ପ୍ରଶ୍ନର ସମାଧାନରେ ପ୍ରୟୋଗ</a></li>
+        <li class="exercise"><a href="exercises/exercise-1c/exercise.html">ଅନୁଶୀଳନୀ – 1 (c)</a></li>
+        <li class="result"><a href="exercises-result/exercise-1c/result.html">ସମାଧାନ</a></li>
+      </ol>
+    </nav>
+  </details>
+</li>
+      <li class="crumb-section" hidden><a href="#"></a></li>
+    </ol>
+  </nav>
+</header>
+<main>
+<header class="chapter-head chapter-band" id="top">
+<p class="ordinal"><span class="chip">ପ୍ରଥମ ଅଧ୍ୟାୟ</span></p>  <h1 class="chapter-title">ସରଳ ସହସମୀକରଣ</h1>
+<p class="gloss">Linear Simultaneous Equations</p>  <p class="meta">Pages 1–22 · 3 exercises</p>
+</header>
+<h2 class="h-sec" id="s-1-1-p7" data-short="1.1 ଉପକ୍ରମଣିକା"><span class="h-num">1.1</span><span class="h-main">ଉପକ୍ରମଣିକା</span><span class="h-gloss">Introduction</span></h2>
+<p>ଗୋଟିଏ ଅଜ୍ଞାତ ରାଶି x ରେ ସରଳ ସମୀକରଣର ସାଧାରଣ ରୂପ ହେଉଛି $ax + b = 0$, ଯେଉଁଠାରେ $a \neq 0$  । ଏଠାରେ a ଓ b ବାସ୍ତବ ସଂଖ୍ୟା ଓ a କୁ x ର ସହଗ (coefficient ) ଓ b କୁ ଧ୍ରୁବକ ରାଶି କୁହାଯାଏ । ଏଠାରେ ସମୀକରଣଟିର ସମାଧାନ (ମୂଳ) $-\frac{b}{a}$ ବୋଲି ଅମେ ଜାଣିଛେ । ଦୁଇଟି ଅଜ୍ଞାତ ରାଶିରେ ଗୋଟିଏ ସରଳ ସମୀକରଣ (ଏକଘାତୀ)ର ସାଧାରଣ ରୂପ    $a_1x + b_1y + c_1 = 0$ ...............(1)</p>
+<p>ଯେଉଁଠାରେ $a_1$ ଓ $b_1$ ଯଥାକ୍ରମେ x ଓ y ର ସହଗ ଓ $c_1$ ଧ୍ରୁବକ ରାଶି ଏବଂ $a_1$, $b_1$ ଓ $c_1$ ବାସ୍ତବ ସଂଖ୍ୟା ଅଟନ୍ତି । ଏଠାରେ $a_1$ ଓ $b_1$ ସହଗଦ୍ୱୟ ଉଭୟ ଶୂନ ନୁହନ୍ତି ।</p>
+<p>ସମୀକରଣ (1) ର ଜ୍ୟାମିତିକ ରୂପ xy ସମତଳ (ସ୍ଥାନାଙ୍କ ସମତଳରେ) ଗୋଟିଏ ସରଳରେଖା । ଏହି ବିଷୟଟିର ଆଲୋଚନା ପୂର୍ବ ଶ୍ରେଣୀର ବୀଜଗଣିତ ପୁସ୍ତକ ରେ ଅନୁଚ୍ଛେଦ 5.3 ରେ କରାଯାଇଛି । x ଓ y ରେ ଏକଘାତୀ ସମୀକରଣ (1) ର ଲେଖଚିତ୍ର ଗୋଟିଏ ସରଳରେଖା ଓ ଏହାର ଆଲୋଚନା ଉକ୍ତ ଅଧ୍ୟାୟ ପାଇଁ ନିତାନ୍ତ ଆବଶ୍ୟକ ।</p>
+<p>x ଓ y ଅଜ୍ଞାତ ରାଶି ବିଶିଷ୍ଟ ଏକଘାତୀ ସମୀକରଣ (1)ର ସମାଧାନ ପାଇଁ ଆମକୁ ସମୀକରଣ (1) ବ୍ୟତୀତ ଆଉ ଗୋଟିଏ ସମୀକରଣର ଆବଶ୍ୟକତା ପଡ଼ିଥାଏ । ଯଥା –</p>
+<div class="math" data-tex="a_2x + b_2y + c_2 = 0 \qquad \ldots\ldots\ldots\ldots(2)">a_2x + b_2y + c_2 = 0 \qquad \ldots\ldots\ldots\ldots(2)</div>
+<p>ଯେଉଁଠାରେ $a_2$ , $b_2$ ଓ $c_2$ ବାସ୍ତବ ସଂଖ୍ୟା ଅଟନ୍ତି । ଏଠାରେ x ଓ y ସହଗ $a_2$, $b_2$ ଦ୍ୱୟ ଏକ ସଙ୍ଗେ ଶୂନ ନୁହନ୍ତି । $c_2$ ଏକ ଧ୍ରୁବକ ରାଶି ।</p>
+<p>ଦୈନନ୍ଦିନ ଜୀବନ ସହ ଜଡ଼ିତ କେତେକ ପରିସ୍ଥିତିର ସମାଧାନରେ ଉକ୍ତ ଏକଘାତୀ ସହ–ସମୀକରଣର ଆବଶ୍ୟକତା ରହିଛି । କେତେକ ପାଟୀଗାଣିତିକ ପ୍ରଶ୍ନର ସମାଧାନରେ ଏହାର ପ୍ରୟୋଗ ସମ୍ପର୍କରେ ଏହି ଅଧ୍ୟାୟର ଶେଷ ଭାଗରେ ଆଲୋଚନା କରାଯାଇଛି ।</p>
+<h2 class="h-sec" id="s-1-2-p8" data-short="1.2 ସହ-ସମୀକରଣଦ୍ୱୟର ଜ୍ୟାମିତିକ ପରିପ୍ରକାଶ"><span class="h-num">1.2</span><span class="h-main">ସହ-ସମୀକରଣଦ୍ୱୟର ଜ୍ୟାମିତିକ ପରିପ୍ରକାଶ</span><span class="h-gloss">Geometrical Representation</span></h2>
+<p>ମନେକର ଦତ୍ତ ଏକ ଘାତୀ ସହ ସମୀକରଣ ଦ୍ୱୟ $a_1x + b_1y + c_1 = 0$ ......(1)</p>
+<div class="math" data-tex="a_2x + b_2y + c_2 = 0 \quad ......(2)">a_2x + b_2y + c_2 = 0 \quad ......(2)</div>
+<p>ଯେଉଁଠାରେ $a_1^2 + b_1^2 \neq 0$ ଏବଂ $a_2^2 + b_2^2 \neq 0$ ଅର୍ଥାତ୍ $a_1, b_1$ ଏବଂ $a_2, b_2$ ଏକ ସଙ୍ଗେ 0 ସହ ସମାନ ନୁହଁନ୍ତି ।</p>
+<p>ମନେକର ସମୀକରଣ (1) ଓ (2) ର ଲେଖଚିତ୍ର (ଯେଉଁ ଗୁଡ଼ିକ xy- ସମତଳ ରେ ଗୋଟିଏ ଗୋଟିଏ ସରଳରେଖା) ଯଥାକ୍ରମେ $L_1$ ଓ $L_2$ ଭାବେ ନାମିତ । ଏହାକୁ ସଂକ୍ଷେପରେ ଲେଖିବା −</p>
+<div class="math" data-tex="L_1 : a_1x + b_1y + c_1 = 0 \quad \text{ଏବଂ} \quad L_2 : a_2x + b_2y + c_2 = 0">L_1 : a_1x + b_1y + c_1 = 0 \quad \text{ଏବଂ} \quad L_2 : a_2x + b_2y + c_2 = 0</div>
+<p>ଅନୁଧ୍ୟାନ କଲେ ଆମେ ଦେଖିପାରିବା ଯେ, ଏହି ସରଳରେଖା ଦ୍ୱୟ xy- ସମତଳରେ (ମନେକର ପ୍ରଥମ ବୃତ୍ତପାଦରେ) ତିନି ପ୍ରକାରରେ ଅବସ୍ଥିତ ହୋଇ ପାରିବେ ଓ ଏହା ନିମ୍ନରେ ଚିତ୍ର 1.1 (i), (ii) ଏବଂ (iii) ରେ ଦର୍ଶିତ ।</p>
+<figure><img src="images/fig-1-1-i.png" width="209" alt="Two straight lines L1 and L2 intersecting at a point P(α,β) in the xy-plane with axes OX and OY." loading="lazy"><figcaption>$(L_1$ ଓ $L_2$ ପରସ୍ପର ଛେଦୀ) ଚିତ୍ର 1.1(i)</figcaption></figure>
+<figure><img src="images/fig-1-1-ii.png" width="209" alt="A single line in the xy-plane labelled both L1 and L2, showing coincident lines." loading="lazy"><figcaption>$(L_1$ ଓ $L_2$ ଏକ ଓ ଅଭିନ୍ନ) ଚିତ୍ର 1.1(ii)</figcaption></figure>
+<figure><img src="images/fig-1-1-iii.png" width="177" alt="Two parallel lines L1 and L2 in the xy-plane with axes OX and OY." loading="lazy"><figcaption>$(L_1$ ଓ $L_2$ ସମାନ୍ତର) ଚିତ୍ର 1.1(iii)</figcaption></figure>
+<p>ଚିତ୍ର 1.1 (i) : $L_1$ ଓ $L_2$ ସରଳରେଖା ଦ୍ୱୟ ପରସ୍ପର ଛେଦୀ, ସେମାନଙ୍କର କେବଳ ଗୋଟିଏ ଛେଦବିନ୍ଦୁ P ଓ ଏହି ବିନ୍ଦୁଟି ଉଭୟ $L_1$ ଓ $L_2$ ଉପରେ ଅବସ୍ଥିତ । ଏହାର ସ୍ଥାନାଙ୍କ $(\alpha,\beta)$ ଅର୍ଥାତ୍ $x = \alpha$ ଓ $y = \beta$ ଦ୍ୱାରା ଉଭୟ ସମୀକରଣ (1) ଓ (2) ସିଦ୍ଧ ହୁଅନ୍ତି ।</p>
+<aside class="note">ବି.ଦ୍ର. : ଏଠାରେ ମନେରଖିବାକୁ ହେବ ଯେ x ଓ y ରେ ଗୋଟିଏ ଏକଘାତୀ ସମୀକରଣର ଅସଂଖ୍ୟ ସମାଧାନ ସମ୍ଭବ ଓ ପ୍ରତ୍ୟେକ ସମାଧାନ ଦତ୍ତ ସମୀକରଣ ଦ୍ୱାରା ସୂଚିତ ସରଳରେଖା ଉପରିସ୍ଥ ଏକ ଏକ ବିନ୍ଦୁକୁ ସୂଚାଇବ ଅର୍ଥାତ୍ ଏକ ଏକ ବିନ୍ଦୁର ସ୍ଥାନାଙ୍କ ହେବ ।</aside>
+<p>ଅତଏବ ସମୀକରଣ (1) ଓ (2) ର କେବଳ ଗୋଟିଏ (ଅନନ୍ୟ) ସମାଧାନ ରହିବ; ଯଦି ଓ କେବଳ ଯଦି ସମୀକରଣ ଦ୍ୱୟ ଦ୍ୱାରା ସୂଚିତ ସରଳରେଖା ଦ୍ୱୟ ପରସ୍ପର ଛେଦୀ ହେବେ ।</p>
+<p>ଚିତ୍ର 1.1(ii) : ଏଠାରେ $L_1$ ଓ $L_2$ ସରଳରେଖା ଦ୍ୱୟ ଏକ ଓ ଅଭିନ୍ନ (Coincident) ଅର୍ଥାତ୍ ଏକ ଏବଂ ଅଭିନ୍ନ ଅଟନ୍ତି । ତେଣୁ ସେମାନଙ୍କର ସାଧାରଣ ବିନ୍ଦୁ ଅସଂଖ୍ୟ । ଅତଏବ ଏ କ୍ଷେତ୍ରରେ ସମୀକରଣ ଦ୍ୱୟର ଅସଂଖ୍ୟ ସମାଧାନ ସମ୍ଭବ ।</p>
+<p>ଚିତ୍ର 1.1 (iii) : ଏ କ୍ଷେତ୍ରରେ $L_1$ ଓ $L_2$ ସରଳରେଖା ଦ୍ୱୟ ପରସ୍ପର ସହ ସମାନ୍ତର । ଅର୍ଥାତ୍ ସରଳରେଖାଦ୍ୱୟ ପରସ୍ପର ଛେଦୀ ହେବେ ନାହିଁ ।</p>
+<p>ସହ ସମୀକରଣଦ୍ୱୟ ଦ୍ୱାରା ସୂଚିତ ସରଳ ରେଖା ଦୁଇଟି ସମାନ୍ତର ହେଲେ, ସହ ସମୀକରଣ ଦ୍ୱୟର ସମାଧାନ ସମ୍ଭବ ନୁହେଁ ।</p>
+<h2 class="h-sec" id="s-1-3-p9" data-short="1.3 ଲେଖଚିତ୍ର ଦ୍ୱାରା ସହସମୀକରଣଦ୍ୱୟର ସମାଧାନ"><span class="h-num">1.3</span><span class="h-main">ଲେଖଚିତ୍ର ଦ୍ୱାରା ସହସମୀକରଣଦ୍ୱୟର ସମାଧାନ</span><span class="h-gloss">Solution of simultaneous equations by use of Graphs</span></h2>
+<p>ପୂର୍ବ ଶ୍ରେଣୀରେ ଗୋଟିଏ ସରଳସମୀକରଣର ଲେଖଚିତ୍ର କିପରି ଅଙ୍କନ କରାଯାଏ ସେ ବିଷୟରେ ଆଲୋଚନା କରାଯାଇଛି । ଲେଖଚିତ୍ର ସାହାଯ୍ୟରେ ଦୁଇଟି ଏକଘାତୀ ସହ ସମୀକରଣର ସମାଧାନ କିପରି କରାଯାଏ ସେ ସମ୍ପର୍କରେ ଆମର ଆଲୋଚନା ନିମ୍ନରେ ଉଦାହରଣମାନଙ୍କ ମାଧ୍ୟମରେ କରିବା ।</p>
+<section class="example"><h4>ଉଦାହରଣ – 1 : ଲେଖଚିତ୍ର ଅଙ୍କନ କରି ନିମ୍ନଲିଖିତ ସହ ସମୀକରଣ ଦ୍ୱୟର ସମାଧାନ କର ।</h4><div class="math" data-tex="x + 2y - 3 = 0 \quad \text{............ (i)} \qquad 2x - y - 1 = 0 \quad \text{............ (ii)}">x + 2y - 3 = 0 \quad \text{............ (i)} \qquad 2x - y - 1 = 0 \quad \text{............ (ii)}</div>
+<p class="solution">ସମାଧାନ : ସମୀକରଣ ଦ୍ୱୟରୁ y କୁ x ରୂପରେ (ଅଥବା x କୁ y ରୂପରେ) ପ୍ରକାଶ କଲେ,</p>
+<div class="math" data-tex="x + 2y - 3 = 0 \;\Rightarrow\; y = \frac{1}{2}(3-x) \qquad \text{............ (i)}">x + 2y - 3 = 0 \;\Rightarrow\; y = \frac{1}{2}(3-x) \qquad \text{............ (i)}</div>
+<div class="math" data-tex="2x - y - 1 = 0 \;\Rightarrow\; y = 2x - 1 \qquad \text{............ (ii)}">2x - y - 1 = 0 \;\Rightarrow\; y = 2x - 1 \qquad \text{............ (ii)}</div>
+<p>ସମୀକରଣ (i) ରେ  x ର ମାନ 3 ଓ 1 ପାଇଁ  y ର ଆନୁଷଙ୍ଗିକ ମାନ ନିମ୍ନ ଟେବୁଲରେ ଦିଆଯାଇଛି ।</p>
+<div class="table-wrap"><table><tr><td>x</td><td>3</td><td>1</td></tr><tr><td>y</td><td>0</td><td>1</td></tr></table></div>
+<p>∴ $P_1$ ଓ $P_2$ ବିନ୍ଦୁ ଦ୍ୱୟର ସ୍ଥାନାଙ୍କ ଯଥାକ୍ରମେ (3,0) ଓ (1,1) ଅଟେ ।</p>
+<p>ସେହିପରି ସମୀକରଣ (ii) ରେ  x ର ମାନ 1 ଓ 2 ପାଇଁ  y ର ଆନୁଷଙ୍ଗିକ ମାନ ନିମ୍ନ ଟେବୁଲରେ ଦିଆଯାଇଛି ।</p>
+<div class="table-wrap"><table><tr><td>x</td><td>1</td><td>2</td></tr><tr><td>y</td><td>1</td><td>3</td></tr></table></div>
+<p>∴  $Q_1$ ଓ $Q_2$ ର ସ୍ଥାନାଙ୍କ ଯଥାକ୍ରମେ (1,1) ଓ (2,3)  ଅଟେ ।</p>
+<p>ଲେଖ କାଗଜରେ x ଓ y ଅକ୍ଷଦ୍ୱୟ ଅଙ୍କନ କରି $L_1$ ରେଖାପାଇଁ $P_1(3,0)$ ଓ $P_2(1,1)$  ବିନ୍ଦୁଦ୍ୱୟକୁ xy ସମତଳରେ</p>
+<figure><img src="images/fig-1-2.png" width="363" alt="Graph with X and Y axes showing two intersecting straight lines L1 (falling) and L2 (rising) meeting at P2(1,1); P1(3,0) marked on the X-axis." loading="lazy"><figcaption>(ଚିତ୍ର 1.2)</figcaption></figure>
+<p>ସ୍ଥାପନ କର ଏବଂ $L_2$ ରେଖା ପାଇଁ $Q_1(1, 1)$ ଓ $Q_2(2, 3)$ ବିନ୍ଦୁଦ୍ୱୟକୁ xy ସମତଳରେ ସ୍ଥାପନ କର । ଏହାପରେ $\overleftrightarrow{P_1P_2}(L_1)$ ଓ $\overleftrightarrow{Q_1Q_2}(L_2)$ ରେଖାଦ୍ୱୟ ଅଙ୍କନ କରି ସେମାନଙ୍କର ଛେଦବିନ୍ଦୁ P ଚିହ୍ନଟ କର, ଯାହାର x- ସ୍ଥାନାଙ୍କ 1 ଏବଂ y- ସ୍ଥାନାଙ୍କ 1 ହେବ । ∴ ନିର୍ଣ୍ଣେୟ ସମାଧାନଟି (1, 1) ।</p>
+<aside class="note">ଦ୍ରଷ୍ଟବ୍ୟ : ସମତଳରେ ଦୁଇ ବିନ୍ଦୁ ମଧ୍ୟ ଦେଇ ଏକ ଅନନ୍ୟ ସରଳରେଖା ଅଙ୍କନ କରାଯାଇପାରେ । ତେଣୁ ଏକ ସରଳରେଖାର ଲେଖଚିତ୍ର ପାଇଁ ଅତି କମ୍‌ରେ ଦୁଇଗୋଟି ବିନ୍ଦୁର କ୍ରମିତ ଯୋଡ଼ି ନିର୍ଣ୍ଣୟ ଆବଶ୍ୟକ; କିନ୍ତୁ ଅନ୍ୟ ଗୋଟିଏ ବିନ୍ଦୁର କ୍ରମିତ ଯୋଡ଼ି ନେଇ ସରଳରେଖାର ଅନନ୍ୟତା ଦର୍ଶାଇବା ବିଧେୟ ।</aside>
+</section>
+<section class="example"><h4>ଉଦାହରଣ - 2  : ଲେଖ ଚିତ୍ର ଅଙ୍କନ କରି ସମାଧାନ କର : $x - 2y - 7 = 0$;  $x + y + 2 = 0$</h4><p class="solution">ସମାଧାନ : ଦତ୍ତ ସହସମୀକରଣଦ୍ୱୟ ରୁ y ର x ରୂପ</p>
+<div class="math" data-tex="x - 2y - 7 = 0;\ \text{କିମ୍ବା}\quad y = \frac{1}{2}(x-7) \ \ldots\ldots\ldots\ldots \text{(i)}">x - 2y - 7 = 0;\ \text{କିମ୍ବା}\quad y = \frac{1}{2}(x-7) \ \ldots\ldots\ldots\ldots \text{(i)}</div>
+<div class="math" data-tex="\text{ଏବଂ}\qquad x + y + 2 = 0\ \text{କିମ୍ବା}\ y = -2 - x \ \ldots\ldots\ldots\ldots \text{(ii)}">\text{ଏବଂ}\qquad x + y + 2 = 0\ \text{କିମ୍ବା}\ y = -2 - x \ \ldots\ldots\ldots\ldots \text{(ii)}</div>
+<p>(i) ରେ x ର ଦୁଇଗୋଟି ମାନ ପାଇଁ y ର ଆନୁସଙ୍ଗିକ ମାନ ସ୍ଥିର କରି ଦୁଇଟି ବିନ୍ଦୁ ପାଇଁ କ୍ରମିତ ଯୋଡ଼ି ସ୍ଥିର କରିପାରିବା ।</p>
+<div class="table-wrap"><table><tr><td>x</td><td>–1</td><td>3</td></tr><tr><td>y</td><td>–4</td><td>–2</td></tr></table></div>
+<p>$P_1 (-1, -4)$ ଏବଂ $P_2 (3, -2)$</p>
+<p>ସେହିପରି (ii)  କ୍ଷେତ୍ରରେ ଦୁଇଟି ବିନ୍ଦୁ ପାଇଁ ଦୁଇଟି କ୍ରମିତ ଯୋଡ଼ି ସ୍ଥିର କରିବା ।</p>
+<div class="table-wrap"><table><tr><td>x</td><td>0</td><td>–2</td></tr><tr><td>y</td><td>–2</td><td>0</td></tr></table></div>
+<p>$Q_1 (0, -2)$ ଏବଂ $Q_2 (-2, 0)$</p>
+<p>ଲେଖ କାଗଜରେ x ଓ y ଅକ୍ଷଦ୍ୱୟ ଅଙ୍କନ କରି $L_1$ ରେଖାପାଇଁ $P_1(-1,4)$  ଓ  $P_2(3,-2)$   ବିନ୍ଦୁଦ୍ୱୟକୁ xy ସମତଳରେ ସ୍ଥାପନ କର ଏବଂ $L_2$ ରେଖା ପାଇଁ $Q_1 (0, -2)$ ଓ $Q_2 (-2, 0)$ ବିନ୍ଦୁଦ୍ୱୟକୁ xy ସମତଳରେ ସ୍ଥାପନ କର ।</p>
+<p>ଏହାପରେ $\overleftrightarrow{P_1P_2}$ $(L_1)$ ଓ $\overleftrightarrow{Q_1Q_2}$ $(L_2)$ ରେଖାଦ୍ୱୟ ଅଙ୍କନ କରି ସେମାନଙ୍କର ଛେଦବିନ୍ଦୁ P ଚିହ୍ନଟ କର, ଯାହାର x- ସ୍ଥାନାଙ୍କ 1 ଏବଂ y ସ୍ଥାନାଙ୍କ –3 ହେବ ।</p>
+<figure><img src="images/fig-1-3.png" width="396" alt="Graph with X and Y axes showing line $L_1$ through $P_1(-1,-4)$ and $P_2(3,-2)$ and line $L_2$ through $Q_1(0,-2)$ and $Q_2(-2,0)$, intersecting at $P(1,-3)$." loading="lazy"><figcaption>(ଚିତ୍ର 1.3)</figcaption></figure>
+<p>$L_1$ ଓ $L_2$ ସରଳରେଖାଦ୍ୱୟର ଛେଦବିନ୍ଦୁଟି $P(1,-3)$ ଅତଏବ ନିର୍ଣ୍ଣେୟ ସମାଧାନ $x = 1, y = -3$ ।</p>
+</section>
+<section class="example"><h4>ଉଦାହରଣ – 3 : ନିମ୍ନଲିଖିତ ସହ ସମୀକରଣମାନଙ୍କ କ୍ଷେତ୍ରରେ ଅନନ୍ୟ (ଏକମାତ୍ର) ସମାଧାନ ସମ୍ଭବ କି ନୁହେଁ ପରୀକ୍ଷା କରି ଦେଖ ।</h4><p>(a) $x + y - 3 = 0$   ଓ   $2x + 2y - 6 = 0,$    (b) $x + y - 3 = 0$   ଓ   $x + y - 5 = 0$</p>
+<p class="solution">ସମାଧାନ : (a) ଏଠାରେ ସମୀକରଣ ଦ୍ୱୟ</p>
+<div class="math" data-tex="x + y - 3 = 0 \dots\dots\ \text{(i)} \quad \text{ଓ} \quad 2x + 2y - 6 = 0 \dots\dots\ \text{(ii)}">x + y - 3 = 0 \dots\dots\ \text{(i)} \quad \text{ଓ} \quad 2x + 2y - 6 = 0 \dots\dots\ \text{(ii)}</div>
+<p>ସମୀକରଣ (ii) $\Rightarrow$ $2x + 2y - 6 = 0 \Rightarrow x + y - 3 = 0$</p>
+<p>ଏଠାରେ ଲକ୍ଷ୍ୟ କର ସମୀକରଣଦ୍ୱୟ ଅଭିନ୍ନ ଅଟନ୍ତି । ତେଣୁ ପ୍ରତ୍ୟେକ ସମୀକରଣ $(0,3)$ ଓ $(3,0)$ ସଂଖ୍ୟାଯୋଡ଼ିମାନଙ୍କ ଦ୍ୱାରା ସିଦ୍ଧ ହେଉଛନ୍ତି । ସୁତରାଂ ସମୀକରଣଦ୍ୱୟ ଦ୍ୱାରା ସୂଚିତ ସରଳରେଖା ଏକ ଓ ଅଭିନ୍ନ ।</p>
+<figure><img src="images/fig-1-4.png" width="285" alt="Graph showing a single straight line through (0,3) and (3,0) on X–Y axes." loading="lazy"><figcaption>(ଚିତ୍ର 1.4)</figcaption></figure>
+<p>ଯେହେତୁ ସରଳରେଖା ଦ୍ୱୟ ଏକ ଓ ଅଭିନ୍ନ (ଚିତ୍ର 1.4) । ସେମାନଙ୍କର ସାଧାରଣ ବିନ୍ଦୁ ମାନଙ୍କ ସଂଖ୍ୟା ଅସଂଖ୍ୟ । ଅର୍ଥାତ୍ ଦତ୍ତ ସହ ସମୀକରଣ ଦ୍ୱୟର ଅନନ୍ୟ ସମାଧାନ ସମ୍ଭବ ନୁହେଁ ।</p>
+<p>(b) ଦତ୍ତ ସମୀକରଣ ଦ୍ୱୟ $x + y - 3 = 0$</p>
+<div class="math" data-tex="\Rightarrow y = 3 - x \dots\dots \quad \text{(i)}">\Rightarrow y = 3 - x \dots\dots \quad \text{(i)}</div>
+<div class="math" data-tex="x + y - 5 = 0">x + y - 5 = 0</div>
+<div class="math" data-tex="\Rightarrow y = 5 - x \dots\dots \quad \text{(ii)}">\Rightarrow y = 5 - x \dots\dots \quad \text{(ii)}</div>
+<p>ପ୍ରଥମ ସମୀକରଣର ଅସଂଖ୍ୟ ସମାଧାନ ମଧ୍ୟରୁ ଦୁଇ ଗୋଟି ସମାଧାନ $(0, 3)$ ଓ $(3, 0)$  ଏବଂ ସେହିପରି ଦ୍ୱିତୀୟ ସମୀକରଣର ଦୁଇଗୋଟି ସମାଧାନ $(0, 5)$ ଓ $(5, 0)$ । ସ୍ଥାନାଙ୍କ ଅକ୍ଷ ନେଇ ଦତ୍ତ ବିନ୍ଦୁଗୁଡ଼ିକୁ ସଂସ୍ଥାପନ କରି ଏହି ସରଳରେଖା ଦ୍ୱୟ ଅଙ୍କନ କଲେ ଆମେ ଲେଖଚିତ୍ର 1.5 ପାଇବା ।</p>
+<figure><img src="images/fig-1-5.png" width="285" alt="Graph showing two parallel lines L₁ through (0,3), (3,0) and L₂ through (0,5), (5,0) on X–Y axes." loading="lazy"><figcaption>(ଚିତ୍ର 1.5)</figcaption></figure>
+<p>ଏହି ସରଳରେଖା ଦ୍ୱୟ ସମାନ୍ତର ହେତୁ ସେମାନଙ୍କର କୌଣସି ସାଧାରଣ ବିନ୍ଦୁ (ଛେଦବିନ୍ଦୁ) ସମ୍ଭବ ନୁହେଁ । ସୁତରାଂ (b) ରେ ପ୍ରଦତ୍ତ ସହସମୀକରଣ ଦ୍ୱୟର କୌଣସି ସମାଧାନ ନାହିଁ ।</p>
+</section>
+<h2 class="h-sec" id="s-1-4-p12" data-short="1.4 ସହସମୀକରଣଦ୍ୱୟର ସମାଧାନ ପାଇଁ ସର୍ତ୍ତ"><span class="h-num">1.4</span><span class="h-main">ସହସମୀକରଣଦ୍ୱୟର ସମାଧାନ ପାଇଁ ସର୍ତ୍ତ</span><span class="h-gloss">Conditions of solvability of two linear simultaneous equations</span></h2>
+<p>ମନେକର ଏକଘାତୀ ସହ ସମୀକରଣ ଦୁଇଟି $a_1x + b_1y + c_1 = 0$ ଓ $a_2x + b_2y + c_2 = 0$</p>
+<p>ପ୍ରତ୍ୟେକ ସମୀକରଣର ଲେଖଚିତ୍ର ଗୋଟିଏ ଗୋଟିଏ ସରଳରେଖା । ଯେଉଁ ଠାରେ $a_1$, $b_1$ ଏକ ସଙ୍ଗେ ଶୂନ୍ୟ ନୁହଁନ୍ତି ଓ $a_2$, $b_2$ ମଧ୍ୟ ଏକ ସଙ୍ଗେ ଶୂନ୍ୟ ନୁହଁନ୍ତି ।</p>
+<p>ଉଦାହରଣ -1 ଏବଂ ଉଦାହରଣ – 2 ରେ ଆମେ ଦେଖ୍ଲେ ଯେ ସହସମୀକରଣ ଦ୍ୱୟର ଅନନ୍ୟ ସମାଧାନ ମିଳୁଅଛି ।</p>
+<p>ଉଦାହରଣ -1 ରୁ ପାଇବା – $a_1 = 1, b_1 = 2, c_1 = -3$ ଏବଂ $a_2 = 2, b_2 = -1, c_2 = -1$</p>
+<div class="math" data-tex="\therefore \frac{a_1}{a_2} = \frac{1}{2} \quad \text{ଓ} \quad \frac{b_1}{b_2} = \frac{2}{-1} = -2 \implies \frac{a_1}{a_2} \neq \frac{b_1}{b_2}">\therefore \frac{a_1}{a_2} = \frac{1}{2} \quad \text{ଓ} \quad \frac{b_1}{b_2} = \frac{2}{-1} = -2 \implies \frac{a_1}{a_2} \neq \frac{b_1}{b_2}</div>
+<p>ସେହିପରି ଉଦାହରଣ – 2 କ୍ଷେତ୍ରରେ  $\frac{a_1}{a_2} = \frac{1}{1} = 1$ ଓ $\frac{b_1}{b_2} = \frac{-2}{1} = -2$ $\implies \frac{a_1}{a_2} \neq \frac{b_1}{b_2}$</p>
+<p>ଉପରୋକ୍ତ ଅନୁଶୀଳନରୁ ପାଇଲେ, ଅଜ୍ଞାତ ରାଶି x ର ସହଗ ଦ୍ୱୟର ଅନୁପାତ ଓ ଅଜ୍ଞାତ ରାଶି y ର ସହଗ ଦ୍ୱୟର ଅନୁପାତ ଅସମାନ ହେଲେ ସହସମୀକରଣ ଦୁଇଟିର ଅନନ୍ୟ ସମାଧାନ ସମ୍ଭବ । ଏ କ୍ଷେତ୍ରରେ ସମୀକରଣ ଦ୍ୱୟ ସଙ୍ଗତ ଓ ଅନନ୍ୟ ସମାଧାନ ବିଶିଷ୍ଟ । କାରଣ ଲେଖଚିତ୍ର ଦ୍ୱୟ ପରସ୍ପରକୁ ଏକମାତ୍ର ବିନ୍ଦୁରେ ଛେଦ କରୁଛନ୍ତି । ଅନ୍ୟ ପ୍ରକାରରେ କହିଲେ ସହ ସମୀକରଣଦ୍ୱୟ ସଙ୍ଗତ ଓ ସ୍ୱତନ୍ତ୍ର (Consistent and Independent) ।</p>
+<p>ଉଦାହରଣ 3(i) ରେ ଆମେ ଦେଖିଲେ ଯେ,  $a_1 = 1$, $b_1 = 1$, $c_1 = -3$ ଏବଂ $a_2 = 2$, $b_2 = 2$, $c_2 = -6$</p>
+<p>ଏଠାରେ $\frac{a_1}{a_2} = \frac{1}{2}$, $\frac{b_1}{b_2} = \frac{1}{2}$ ଓ $\frac{c_1}{c_2} = \frac{-3}{-6} = \frac{1}{2}$</p>
+<p>ଅର୍ଥାତ୍ $\frac{a_1}{a_2} = \frac{b_1}{b_2} = \frac{c_1}{c_2}$ ଏବଂ ଦତ୍ତ ସମୀକରଣ ଦ୍ୱୟର ଅନନ୍ୟ ସମାଧାନ ସମ୍ଭବ ହେଉ ନଥିଲା ବେଳେ ଅସଂଖ୍ୟ ସମାଧାନ ସମ୍ଭବ । କାରଣ ଲେଖଚିତ୍ରଦ୍ୱୟ ଏକ ଏବଂ ଅଭିନ୍ନ ଅଟନ୍ତି । ଅନ୍ୟ ପ୍ରକାରରେ କହିଲେ ସହସମୀକରଣଦ୍ୱୟ ସଙ୍ଗତ ଓ ନିର୍ଭରଶୀଳ (Consistent and Dependent) ।</p>
+<p>ଉଦାହରଣ 3(ii) ରେ ଆମେ ଦେଖିଲେ ଯେ    $a_1 = 1, b_1 = 1, c_1 = -3$</p>
+<div class="math" data-tex="a_2 = 1,\ b_2 = 1,\ c_2 = -5">a_2 = 1,\ b_2 = 1,\ c_2 = -5</div>
+<p>ଏଠାରେ $\frac{a_1}{a_2} = \frac{1}{1} = 1$, $\frac{b_1}{b_2} = \frac{1}{1} = 1$   ଏବଂ $\frac{c_1}{c_2} = \frac{-3}{-5} = \frac{3}{5}$</p>
+<p>ଅର୍ଥାତ୍ $\frac{a_1}{a_2} = \frac{b_1}{b_2} \neq \frac{c_1}{c_2}$ ଏବଂ ଦତ୍ତ ସହସମୀକରଣ ଦୁଇଟିର କୌଣସି ସମାଧାନ ସମ୍ଭବ ହେଉନାହିଁ । କାରଣ ଲେଖଚିତ୍ର ଦ୍ୱୟ ସମାନ୍ତର ଅଟନ୍ତି । ଏପରି କ୍ଷେତ୍ରରେ ସହ ସମୀକରଣ ଦ୍ୱୟ ଅସଙ୍ଗତ (Inconsistent) । ଉଦାହରଣ–1, ଉଦାହରଣ–2 ଓ ଉଦାହରଣ–3 ରୁ ପାଇଥିବା ତଥ୍ୟଗୁଡ଼ିକ ନିମ୍ନ ସାରଣୀରେ ସନ୍ନିବେଶିତ ।</p>
+<div class="table-wrap"><table><tr><td>$a_1x+b_1y+c_1=0$ ଏବଂ $a_2x+b_2y+c_2=0$ $\frac{a_1}{a_2}, \frac{b_1}{b_2}, \frac{c_1}{c_2}$ ଅନୁପାତ ଗୁଡ଼ିକ ମଧ୍ୟରେ ତୁଳନା</td><td>$L_1 : a_1x+b_1y+c_1=0$<br>$L_2: a_2x+b_2y+c_2=0$</td><td>ସହସମୀକରଣ ଦ୍ୱୟର ସମାଧାନ ଅନୁଯାୟୀ ସେମାନଙ୍କର ନାମକରଣ</td></tr><tr><td>$\frac{a_1}{a_2} \neq \frac{b_1}{b_2}$</td><td>$L_1$ ଓ $L_2$ ରେଖାଦ୍ୱୟ ପରସ୍ପର ଛେଦୀ</td><td>ସଙ୍ଗତ ଓ ସ୍ୱତନ୍ତ୍ର ଅର୍ଥାତ୍ ଅନନ୍ୟ (ସହସମୀକରଣଦ୍ୱୟର ଏକମାତ୍ର ସମାଧାନ ସମ୍ଭବ)</td></tr><tr><td>$\frac{a_1}{a_2} = \frac{b_1}{b_2} = \frac{c_1}{c_2}$</td><td>$L_1$ ଓ $L_2$ ରେଖାଦ୍ୱୟ ସମାପତିତ ଅଥବା ଏକ ଓ ଅଭିନ୍ନ</td><td>ସଙ୍ଗତ ଓ ନିର୍ଭରଶୀଳ (ଅସଂଖ୍ୟ ସମାଧାନ ବିଶିଷ୍ଟ)</td></tr><tr><td>$\frac{a_1}{a_2} = \frac{b_1}{b_2} \neq \frac{c_1}{c_2}$</td><td>$L_1$ ଓ $L_2$ ରେଖାଦ୍ୱୟ ସମାନ୍ତର</td><td>ଅସଙ୍ଗତ (ସମାଧାନ ଅସମ୍ଭବ)</td></tr></table></div>
+<aside class="note">ଦ୍ରଷ୍ଟବ୍ୟ : ସମୀକରଣ $a_1x+b_1y = 0$ ଓ $a_2x+b_2y = 0$ ଦ୍ୱୟର ଅନନ୍ୟ ସମାଧାନଟି (0,0); ଯଦି $\frac{a_1}{a_2} \neq \frac{b_1}{b_2}$ ଓ ଅସଂଖ୍ୟ ସମାଧାନ ସମ୍ଭବ; ଯଦି $\frac{a_1}{a_2} = \frac{b_1}{b_2}$ । ଏ କ୍ଷେତ୍ରରେ ସମୀକରଣଦ୍ୱୟ ସର୍ବଦା ସଙ୍ଗତ ଅଟନ୍ତି ।</aside>
+<section class="example"><h4>ଉଦାହରଣ - 4</h4><p>(i) k ର କେଉଁ ମୂଲ୍ୟ ଗୁଡ଼ିକ ପାଇଁ $4x + ky + 8 = 0$,  $2x + 2y + 2 = 0$ ସହସମୀକରଣ ଦୁଇଟିର ଅନନ୍ୟ ସମାଧାନ ସମ୍ଭବ ?</p>
+<p>(ii) k ର କେଉଁ ମୂଲ୍ୟ ପାଇଁ $kx + 3y - (k-3) = 0$ ଓ $12x + ky - k = 0$ ସହସମୀକରଣ ଦ୍ୱୟର ଅସଂଖ୍ୟ ସମାଧାନ ସମ୍ଭବ ?</p>
+<p>(iii) k ର କେଉଁ ମୂଲ୍ୟ ପାଇଁ $5x-3y = 0$ ଓ $2x + ky = 0$ ସହସମୀକରଣ ଦ୍ୱୟର ଅସଂଖ୍ୟ ସମାଧାନ ରହିବ ?</p>
+<p class="solution">ସମାଧାନ (i)  ଏଠାରେ $a_1 = 4$, $b_1 = k$ ଓ $c_1 = 8$ , $a_2 = 2$, $b_2 = 2$ ଓ $c_2 = 2$ ।</p>
+<p>ସମୀକରଣ ଦ୍ୱୟର ଅନନ୍ୟ ସମାଧାନ ପାଇଁ ଆବଶ୍ୟକ ସର୍ତ୍ତ : $\frac{a_1}{a_2} \neq \frac{b_1}{b_2} \Rightarrow \frac{4}{2} \neq \frac{k}{2} \Rightarrow k \neq 4$</p>
+<p>∴ $k = 4$  ଭିନ୍ନ ଅନ୍ୟ ସମସ୍ତ ମାନ ପାଇଁ ଦତ୍ତ ସହ ସମୀକରଣଦ୍ୱୟର ଅନନ୍ୟ ସମାଧାନ ସମ୍ଭବ ।</p>
+<p>(ii) ଏଠାରେ $a_1 = k$, $b_1 = 3$,  $c_1 = -(k-3)$,  $a_2 = 12$, $b_2 = k$,  $c_2 = -k$</p>
+<p>ଦତ୍ତ ସହ ସମୀକରଣଦ୍ୱୟର ଅସଂଖ୍ୟ ସମାଧାନ ପାଇଁ ଆବଶ୍ୟକ ସର୍ତ୍ତ :</p>
+<div class="math" data-tex="\frac{a_1}{a_2} = \frac{b_1}{b_2} = \frac{c_1}{c_2} \implies \frac{k}{12} = \frac{3}{k} = \frac{-(k-3)}{-k}">\frac{a_1}{a_2} = \frac{b_1}{b_2} = \frac{c_1}{c_2} \implies \frac{k}{12} = \frac{3}{k} = \frac{-(k-3)}{-k}</div>
+<p>ପ୍ରଥମ ସମାନତା ରୁ  $k^2 = 12 \times 3 \Rightarrow k = \pm 6$                  ..........(1)</p>
+<p>ଦ୍ୱିତୀୟ ସମାନତା ରୁ  $-3k = -k(k-3) \Rightarrow k^2 - 6k = 0$  $\Rightarrow k (k- 6) = 0 \Rightarrow k = 0$  କିମ୍ବା $k = 6$ (1) ଓ (2) ରୁ ଏହା ସୁସ୍ପଷ୍ଟ ଯେ $k = 6$ ହେଲେ ଦତ୍ତ ସହସମୀକରଣ ଦ୍ୱୟର ଅସଂଖ୍ୟ ସମାଧାନ ସମ୍ଭବ ।</p>
+<aside class="note">ଦ୍ରଷ୍ଟବ୍ୟ : $k = -6$ ହେଲେ $\frac{a_1}{a_2} = \frac{b_1}{b_2} = \frac{1}{2} \neq \frac{c_1}{c_2} = \frac{3}{2}$ ହେତୁ ସମୀକରଣ ଦ୍ୱୟ ଅସଙ୍ଗତ ହେବ ଓ $k \neq \pm 6$ ପାଇଁ ସମୀକରଣ ଦ୍ୱୟର ଅନନ୍ୟ ସମାଧାନ ସମ୍ଭବ ।</aside>
+<p>(iii) ଏଠାରେ $a_1 = 5$, $b_1 = -3$, $a_2 = 2$, $b_2 = k$</p>
+<p>ସମୀକରଣଦ୍ୱୟର ଅସଂଖ୍ୟ ସମାଧାନ ରହିବାର ସର୍ତ୍ତ : $\frac{a_1}{a_2} = \frac{b_1}{b_2} \Rightarrow \frac{5}{2} = \frac{-3}{k}$</p>
+<p>ଅର୍ଥାତ୍ $k = -\frac{6}{5}$ ହେଲେ ଦତ୍ତ ସହସମୀକରଣଦ୍ୱୟର ଅସଂଖ୍ୟ ସମାଧାନ ରହିବ ।</p>
+</section>
+<a class="exercise-card" href="exercises/exercise-1a/exercise.html">
+  <span class="exercise-title">ଅନୁଶୀଳନୀ - 1(a)</span>
+<span class="exercise-meta">9 questions · pages 14–16</span></a>
+<h2 class="h-sec" id="s-1-2-p16" data-short="1.2. ସହ ସମୀକରଣଦ୍ୱୟର ବୀଜଗାଣିତିକ ସମାଧାନ"><span class="h-num">1.2</span><span class="h-main">ସହ ସମୀକରଣଦ୍ୱୟର ବୀଜଗାଣିତିକ ସମାଧାନ</span></h2>
+<p>ମନେକର ଦତ୍ତ ସହ ସମୀକରଣଦ୍ୱୟ ସଙ୍ଗତ ଓ ସ୍ୱତନ୍ତ୍ର।</p>
+<div class="math" data-tex="a_1x + b_1y + c_1 = 0 \qquad \ldots\ldots\ldots\ldots\ldots(1)">a_1x + b_1y + c_1 = 0 \qquad \ldots\ldots\ldots\ldots\ldots(1)</div>
+<div class="math" data-tex="a_2x + b_2y + c_2 = 0 \qquad \ldots\ldots\ldots\ldots\ldots(2)">a_2x + b_2y + c_2 = 0 \qquad \ldots\ldots\ldots\ldots\ldots(2)</div>
+<p>ଏ ଦୁଇ ସମୀକରଣର ସମାଧାନ ବୀଜଗାଣିତିକ ପ୍ରଣାଳୀ କିମ୍ବା ଲେଖଚିତ୍ର ପ୍ରଣାଳୀରେ କରାଯାଇ ପାରିବ । ପ୍ରଥମେ ବୀଜଗାଣିତିକ ପ୍ରଣାଳୀର ଆଲୋଚନା କରିବା ।</p>
+<p>(i)   ପ୍ରତିକଳ୍ପନ ପଦ୍ଧତି (Method of Substitution) : ଏହି ପ୍ରଣାଳୀରେ ଦତ୍ତ ସମୀକରଣ (1) ଓ (2) ରୁ ଯେକୌଣସିଟିକୁ ନେଇ ସେଥିରେ x କୁ y ମାଧ୍ୟମରେ କିମ୍ବା y କୁ x ମାଧ୍ୟମରେ ପ୍ରକାଶ କରାଯାଏ । ମନେକର ସମୀକରଣ (1) କୁ ବିଚାର କରାଯାଇ y କୁ x ମାଧ୍ୟମରେ ପ୍ରକାଶ କରିବା । ଉଦାହରଣ ସ୍ୱରୂପ ସମୀକରଣ (1)ରେ</p>
+<p>ଯଦି $b_1 \neq 0$ ତେବେ $b_1y = -c_2 - a_1x \Rightarrow y = \frac{1}{b_1}(-c_1 - a_1x)$    ......................(3)</p>
+<p>(3) ଦ୍ୱାରା ପ୍ରଦତ୍ତ y ର ମାନ $\frac{1}{b_1}(-c_1 - a_1x)$ କୁ ସମୀକରଣ (2)ରେ ବ୍ୟବହାର କଲେ ଗୋଟିଏ ଏକଘାତୀ ସମୀକରଣ ମିଳିବ ଓ ଏହା</p>
+<div class="math" data-tex="a_2x + \frac{b_2}{b_1}\{-c_1 - a_1x\} + c_2 = 0 \;\Rightarrow\; (a_2b_1 - a_1b_2)x + (c_2b_1 - c_1b_2) = 0">a_2x + \frac{b_2}{b_1}\{-c_1 - a_1x\} + c_2 = 0 \;\Rightarrow\; (a_2b_1 - a_1b_2)x + (c_2b_1 - c_1b_2) = 0</div>
+<div class="math" data-tex="\Rightarrow x = \frac{-(c_2b_1 - c_1b_2)}{a_2b_1 - a_1b_2} \;\Rightarrow\; x = \frac{b_1c_2 - b_2c_1}{a_1b_2 - a_2b_1} \qquad \ldots\ldots\ldots\ldots\ldots(4)">\Rightarrow x = \frac{-(c_2b_1 - c_1b_2)}{a_2b_1 - a_1b_2} \;\Rightarrow\; x = \frac{b_1c_2 - b_2c_1}{a_1b_2 - a_2b_1} \qquad \ldots\ldots\ldots\ldots\ldots(4)</div>
+<p>(4) ଦ୍ୱାରା ପ୍ରଦତ୍ତ $x$ ର ମାନକୁ (1) କିମ୍ବା (2) ସମୀକରଣରେ ବ୍ୟବହାର କଲେ ପାଇବା</p>
+<div class="math" data-tex="a_1\left(\frac{b_1c_2 - b_2c_1}{a_1b_2 - a_2b_1}\right) + b_1y + c_1 = 0 \;\Rightarrow\; y = \frac{c_1a_2 - c_2a_1}{a_1b_2 - a_2b_1} \qquad \ldots\ldots (5)">a_1\left(\frac{b_1c_2 - b_2c_1}{a_1b_2 - a_2b_1}\right) + b_1y + c_1 = 0 \;\Rightarrow\; y = \frac{c_1a_2 - c_2a_1}{a_1b_2 - a_2b_1} \qquad \ldots\ldots (5)</div>
+<div class="math" data-tex="x = \frac{b_1c_2 - b_2c_1}{a_1b_2 - a_2b_1},\; y = \frac{c_1a_2 - c_2a_1}{a_1b_2 - a_2b_1} \qquad \ldots\ldots\ldots (6)">x = \frac{b_1c_2 - b_2c_1}{a_1b_2 - a_2b_1},\; y = \frac{c_1a_2 - c_2a_1}{a_1b_2 - a_2b_1} \qquad \ldots\ldots\ldots (6)</div>
+<aside class="note">ଦ୍ରଷ୍ଟବ୍ୟ : ଯଦି $a_1 \neq 0$ ହୁଏ ତେବେ ଅନୁରୂପ ଭାବେ $x$ କୁ $y$ ମାଧ୍ୟମରେ ପ୍ରକାଶ କରି ଅଗ୍ରସର ହେଲେ ଆବଶ୍ୟକୀୟ ସମାଧାନ ମିଳିପାରିବ ।</aside>
+<section class="example"><h4>ଉଦାହରଣ – 5 :</h4><p>ସମାଧାନ କର : $5x + 2y + 2 = 0,\ 3x + 4y - 10 = 0$</p>
+<p class="solution">ସମାଧାନ : ଏଠାରେ ଦତ୍ତ ସହ ସମୀକରଣଦ୍ୱୟ</p>
+<div class="math" data-tex="5x + 2y + 2 = 0 \quad \text{ଓ} \qquad \ldots\ldots\ldots (i)">5x + 2y + 2 = 0 \quad \text{ଓ} \qquad \ldots\ldots\ldots (i)</div>
+<div class="math" data-tex="3x + 4y - 10 = 0 \qquad \ldots\ldots\ldots (ii)">3x + 4y - 10 = 0 \qquad \ldots\ldots\ldots (ii)</div>
+<p>ସମୀକରଣ (i)କୁ ବିଚାର କରି $y$ କୁ $x$ ମାଧ୍ୟମରେ ପ୍ରକାଶ କରାଯାଉ ।</p>
+<div class="math" data-tex="\therefore 2y = -5x - 2 \;\Rightarrow\; y = \frac{1}{2}(-5x - 2) \qquad \ldots\ldots\ldots (iii)">\therefore 2y = -5x - 2 \;\Rightarrow\; y = \frac{1}{2}(-5x - 2) \qquad \ldots\ldots\ldots (iii)</div>
+<div class="math" data-tex="\text{(ii) ଓ (iii)ରୁ}\quad 3x + \frac{4}{2}(-5x - 2) - 10 = 0 \;\Rightarrow\; 6x + 4(-5x - 2) - 20 = 0">\text{(ii) ଓ (iii)ରୁ}\quad 3x + \frac{4}{2}(-5x - 2) - 10 = 0 \;\Rightarrow\; 6x + 4(-5x - 2) - 20 = 0</div>
+<div class="math" data-tex="\Rightarrow\; 6x - 20x - 8 - 20 = 0 \;\Rightarrow\; -14x - 28 = 0 \;\Rightarrow\; x = -2">\Rightarrow\; 6x - 20x - 8 - 20 = 0 \;\Rightarrow\; -14x - 28 = 0 \;\Rightarrow\; x = -2</div>
+<p>ସମୀକରଣ (i)ରେ $x = -2$ ସ୍ଥାପନକଲେ ପାଇବା $5(-2) + 2y + 2 = 0$</p>
+<div class="math" data-tex="\Rightarrow\; 2y - 8 = 0 \;\Rightarrow\; y = 4">\Rightarrow\; 2y - 8 = 0 \;\Rightarrow\; y = 4</div>
+<p>$\therefore$ ନିର୍ଣ୍ଣେୟ ସମାଧାନ $(-2, 4)$ ଅଟେ ।                                        (ଉତ୍ତର)</p>
+<aside class="note">ଦ୍ରଷ୍ଟବ୍ୟ :</aside>
+<p>ଦତ୍ତ ସମୀକରଣଦ୍ୱୟରେ $x = -2$, $y = 4$ ନେଇ ପରୀକ୍ଷା କରି ଦେଖ଼ିବା ଉଚିତ୍ ଯେ ସମୀକରଣଦ୍ୱୟ $(-2, 4)$ ଦ୍ୱାରା ସିଦ୍ଧ ହେଉଛନ୍ତି ।</p>
+</section>
+<h3 class="h-sec" id="s-ii-p17" data-short="(II) ଅପସାରଣ ପଦ୍ଧତି"><span class="h-num">(II)</span><span class="h-main">ଅପସାରଣ ପଦ୍ଧତି</span><span class="h-gloss">Method of Elimination</span></h3>
+<p>ଏହି ପଦ୍ଧତିରେ ପ୍ରଦତ୍ତ ସହସମୀକରଣ (1) ଓ (2)ରୁ $x$ କୁ କିମ୍ବା $y$ କୁ ଅପସାରଣ କରାଯାଇଥାଏ । ମନେକର ଆମେ $x$ କୁ ଅପସାରଣ କରିବା । ସମୀକରଣ (1)ରେ $x$ର ସହଗ $a_1$କୁ ସମୀକରଣ (2)ର ଉଭୟ ପାର୍ଶ୍ୱରେ ଗୁଣନକଲେ ଏବଂ ସମୀକରଣ (2)ରେ $x$ର ସହଗ $a_2$କୁ ସମୀକରଣ (1)ର ଉଭୟ ପାର୍ଶ୍ୱରେ ଗୁଣନ କଲେ ପାଇବା</p>
+<div class="math" data-tex="a_2 \times (1) \;\Rightarrow\; a_1a_2x + a_2b_1y + a_2c_1 = 0 \qquad \ldots\ldots\ldots (7)">a_2 \times (1) \;\Rightarrow\; a_1a_2x + a_2b_1y + a_2c_1 = 0 \qquad \ldots\ldots\ldots (7)</div>
+<div class="math" data-tex="a_1 \times (2) \;\Rightarrow\; a_1a_2x + a_1b_2y + a_1c_2 = 0 \qquad \ldots\ldots\ldots (8)">a_1 \times (2) \;\Rightarrow\; a_1a_2x + a_1b_2y + a_1c_2 = 0 \qquad \ldots\ldots\ldots (8)</div>
+<p>ସମୀକରଣ (7) ଓ (୪)ରେ $x$ର ସହଗ ସମାନ। (7) ରୁ (୪)କୁ ବିୟୋଗ କଲେ ପାଇବା</p>
+<div class="math" data-tex="(a_2b_1 - a_1b_2)\,y + (a_2c_1 - a_1c_2) = 0">(a_2b_1 - a_1b_2)\,y + (a_2c_1 - a_1c_2) = 0</div>
+<div class="math" data-tex="\Rightarrow\quad y = \frac{-(a_2c_1 - a_1c_2)}{a_2b_1 - a_1b_2} \quad \Rightarrow\quad y = \frac{c_1a_2 - c_2a_1}{a_1b_2 - a_2b_1}">\Rightarrow\quad y = \frac{-(a_2c_1 - a_1c_2)}{a_2b_1 - a_1b_2} \quad \Rightarrow\quad y = \frac{c_1a_2 - c_2a_1}{a_1b_2 - a_2b_1}</div>
+<p>ପରିଶେଷରେ $y$ର ମାନକୁ ସମୀକରଣ (1) [କିମ୍ବା ସମୀକରଣ (2)]ରେ ବ୍ୟବହାର କଲେ</p>
+<p>$x = \frac{b_1c_2 - b_2c_1}{a_1b_2 - a_2b_1}$ ଲବ୍ଧ ହେବ।</p>
+<p>$\alpha$ ଓ $\beta$ ନିର୍ଣ୍ଣେୟ ସମାଧାନ ହେଲେ, $\alpha = \frac{b_1c_2 - b_2c_1}{a_1b_2 - a_2b_1}$ , $\beta = \frac{c_1a_2 - c_2a_1}{a_1b_2 - a_2b_1}$ ହେବ।</p>
+<section class="example"><h4>ଉଦାହରଣ - 6 :</h4><p>ସମାଧାନ କର : $2x + 3y - 8 = 0$, $3x + y - 5 = 0$</p>
+<p class="solution">ସମାଧାନ :</p>
+<p>ଦତ୍ତ ସହ ସମୀକରଣଦ୍ୱୟ</p>
+<div class="math" data-tex="2x + 3y - 8 = 0 \qquad \text{......(i)}">2x + 3y - 8 = 0 \qquad \text{......(i)}</div>
+<div class="math" data-tex="3x + y - 5 = 0 \qquad \text{......(ii)}">3x + y - 5 = 0 \qquad \text{......(ii)}</div>
+<div class="math" data-tex="3 \times \text{(i)} \Rightarrow\ 6x + 9y - 24 = 0 \qquad \text{......(iii)}">3 \times \text{(i)} \Rightarrow\ 6x + 9y - 24 = 0 \qquad \text{......(iii)}</div>
+<div class="math" data-tex="2 \times \text{(ii)} \Rightarrow\ 6x + 2y - 10 = 0 \qquad \text{......(iv)}">2 \times \text{(ii)} \Rightarrow\ 6x + 2y - 10 = 0 \qquad \text{......(iv)}</div>
+<div class="math" data-tex="\begin{array}{c} -\quad -\quad + \\ \hline \end{array}\ \text{(iii)} - \text{(iv)} \Rightarrow\ 7y - 14 = 0 \Rightarrow y = 2">\begin{array}{c} -\quad -\quad + \\ \hline \end{array}\ \text{(iii)} - \text{(iv)} \Rightarrow\ 7y - 14 = 0 \Rightarrow y = 2</div>
+<p>ସମୀକରଣ (i) ରେ $y = 2$ ସ୍ଥାପନକଲେ ପାଇବା</p>
+<div class="math" data-tex="2x + 6 - 8 = 0 \Rightarrow 2x - 2 = 0 \Rightarrow x = 1">2x + 6 - 8 = 0 \Rightarrow 2x - 2 = 0 \Rightarrow x = 1</div>
+<p>$\therefore$ ନିର୍ଣ୍ଣେୟ ସମାଧାନ $(1, 2)$.                                    (ଉତ୍ତର)</p>
+</section>
+<h3 class="h-sec" id="s-iii-p18" data-short="ବକ୍ର ଗୁଣନ"><span class="h-main">ବକ୍ର ଗୁଣନ</span><span class="h-gloss">Cross Multiplication</span></h3>
+<p>ଆମର ପୂର୍ବ ଆଲୋଚନାରୁ ଆମେ ଦେଖୁଛେ ଯେ ଦତ୍ତ ସହ ସମୀକରଣଦ୍ୱୟର ସମାଧାନ ନିମନ୍ତେ</p>
+<div class="math" data-tex="a_1x + b_1y + c_1 = 0 \qquad \text{......(1)}">a_1x + b_1y + c_1 = 0 \qquad \text{......(1)}</div>
+<div class="math" data-tex="a_2x + b_2y + c_2 = 0 \qquad \text{......(2)}">a_2x + b_2y + c_2 = 0 \qquad \text{......(2)}</div>
+<p>$x = \frac{b_1c_2 - b_2c_1}{a_1b_2 - a_2b_1}$ , $y = \frac{c_1a_2 - c_2a_1}{a_1b_2 - a_2b_1}$ ଅଟେ।</p>
+<p>ସମାଧାନରୁ ଆମକୁ ମିଳିବ</p>
+<div class="math" data-tex="\left.\begin{array}{l} \dfrac{x}{b_1c_2 - b_2c_1} = \dfrac{1}{a_1b_2 - a_2b_1} \\[2mm] \dfrac{y}{c_1a_2 - c_2a_1} = \dfrac{1}{a_1b_2 - a_2b_1} \end{array}\right\} \qquad \text{......(3)}">\left.\begin{array}{l} \dfrac{x}{b_1c_2 - b_2c_1} = \dfrac{1}{a_1b_2 - a_2b_1} \\[2mm] \dfrac{y}{c_1a_2 - c_2a_1} = \dfrac{1}{a_1b_2 - a_2b_1} \end{array}\right\} \qquad \text{......(3)}</div>
+<p>ଉପରେ (3)ରେ ଦିଆଯାଇଥିବା ଦୁଇଟି ସମାନତାର ଦକ୍ଷିଣ ପାର୍ଶ୍ୱ ସମାନ ହେତୁ (3)କୁ</p>
+<div class="math" data-tex="\frac{x}{b_1c_2 - b_2c_1} = \frac{y}{c_1a_2 - c_2a_1} = \frac{1}{a_1b_2 - a_2b_1} \qquad \text{......(4)}">\frac{x}{b_1c_2 - b_2c_1} = \frac{y}{c_1a_2 - c_2a_1} = \frac{1}{a_1b_2 - a_2b_1} \qquad \text{......(4)}</div>
+<p>ରୂପରେ ଲେଖାହେବ। ଏଠାରେ ସ୍ମରଣ ରଖିବା ଉଚିତ ଯେ $a_1b_2 - a_2b_1 \neq 0$ ଅର୍ଥାତ୍‌ $\frac{a_1}{a_2} \neq \frac{b_1}{b_2}$ । ସମୀକରଣ (4)ରେ ପ୍ରଦତ୍ତ ଉକ୍ତିକୁ ବକ୍ରଗୁଣନ କୁହାଯାଏ। ଏହାକୁ ସହଜରେ ମନେ ରଖିବା ପାଇଁ ନିମ୍ନଲିଖିତ ପଦ୍ଧତି ଅବଲମ୍ବନ କରାଯାଇଥାଏ।</p>
+<figure><img src="images/fig-1-08.png" width="172" alt="Cross-multiplication scheme showing x/(b1 c1 ; b2 c2) = y/(c1 a1 ; c2 a2) = 1/(a1 b1 ; a2 b2) with crossing arrows" loading="lazy"></figure>
+<p>ଲକ୍ଷ୍ୟକର ଯେ x ଲବ ଥିବା ପଦର ହରରେ ($b_1$ ଗୁଣନ $c_2$) ଘେଁଡ଼ାଣ ($c_1$ ଗୁଣନ $b_2$) ହୁଏ। ସେହିପରି y ଲବ ଥିବା ପଦର ହର ଓ 1 ଲବ ଥିବା ପଦର ହର ନିର୍ଣ୍ଣିତ ହୋଇଥାଏ।</p>
+<aside class="note">ଦ୍ରଷ୍ଟବ୍ୟ :</aside>
+<p class="list-item">(1)  $c_1 = c_2 = 0$ ଓ $a_1b_2 - a_2b_1 \neq 0$ ହେଲେ, $a_1x + b_1y = 0$, $a_2x + b_2y = 0$ ସମୀକରଣଦ୍ୱୟର ସମାଧାନଟି (0, 0) ଅଟେ। ଏଠାରେ ସମୀକରଣଦ୍ୱୟକୁ <strong>ସମ ସହସମୀକରଣ (Homogeneous Simultaneous equation)</strong> କୁହାଯାଏ। $a_1b_2 - a_2b_1 = 0$ ହେଲେ, ସରଳରେଖାଦ୍ୱୟ ଏକ ଓ ଅଭିନ୍ନ ହେବେ ଓ ଦତ୍ତ ସହସମୀକରଣଦ୍ୱୟର ଅସଂଖ୍ୟ ସମାଧାନ ରହିବ।</p>
+<p class="list-item">(2)  ଦୁଇଗୋଟି ସହସମୀକରଣ ସମାଧାନ କରିବାକୁ ଦିଆଯାଇଥିଲେ ପ୍ରଥମେ $a_1b_2 - a_2b_1 \neq 0$ ସର୍ତ୍ତଟି ସତ୍ୟ ବୋଲି ପରୀକ୍ଷା କରିବା ଆବଶ୍ୟକ।</p>
+<section class="example"><h4>ଉଦାହରଣ – 7 :</h4><p>ସମାଧାନ କର : $2x - 3y - 1 = 0$, $4x + y - 9 = 0$</p>
+<p class="solution">ସମାଧାନ :</p>
+<p>ଦତ୍ତ ସହସମୀକରଣ ଦ୍ୱୟ, $2x - 3y - 1 = 0$, $4x + y - 9 = 0$</p>
+<p>ଏଠାରେ ଲକ୍ଷ୍ୟକର $2 \times 1 - 4(-3) = 2 + 12 = 14 \neq 0$ ତେଣୁ ସମାଧାନ ସମ୍ଭବ।</p>
+<p>ବକ୍ର ଗୁଣନ ପ୍ରଣାଳୀ ଅବଲମ୍ବନରେ,</p>
+<figure><img src="images/fig-1-09.png" width="300" alt="Cross-multiplication diagram with entries x/(−3, 1 ; −1, −9) = y/(−1, −9 ; 2, 4) = 1/(2, 4 ; −3, 1) and crossing arrows" loading="lazy"></figure>
+<div class="math" data-tex="\Rightarrow \quad \frac{x}{(-3)(-9)-1(-1)} = \frac{y}{(-1)4-(-9)2} = \frac{1}{2\times 1-4(-3)}">\Rightarrow \quad \frac{x}{(-3)(-9)-1(-1)} = \frac{y}{(-1)4-(-9)2} = \frac{1}{2\times 1-4(-3)}</div>
+<div class="math" data-tex="\Rightarrow \quad \frac{x}{27+1} = \frac{y}{-4+18} = \frac{1}{2+12} \Rightarrow \frac{x}{28} = \frac{y}{14} = \frac{1}{14} \Rightarrow x = \frac{28}{14} = 2,\quad y = \frac{14}{14} = 1">\Rightarrow \quad \frac{x}{27+1} = \frac{y}{-4+18} = \frac{1}{2+12} \Rightarrow \frac{x}{28} = \frac{y}{14} = \frac{1}{14} \Rightarrow x = \frac{28}{14} = 2,\quad y = \frac{14}{14} = 1</div>
+<p>∴ ନିର୍ଣ୍ଣେୟ ସମାଧାନ (2, 1)।                                                                     (ଉତ୍ତର)</p>
+</section>
+<h2 class="h-sec" id="s-1-4-p20" data-short="1.4. ଅଣ ସରଳରେଖ୍ୟ ସହସମୀକରଣ"><span class="h-num">1.4</span><span class="h-main">ଅଣ ସରଳରେଖ୍ୟ ସହସମୀକରଣ</span></h2>
+<p>ଏ ପର୍ଯ୍ୟନ୍ତ ଆମେ ସରଳରେଖ୍ୟ ସହସମୀକରଣ $a_r x + b_r y + c_r = 0$, $r = 1, 2$   .......(1) ର ସମାଧାନ ସମ୍ପର୍କରେ ଆଲୋଚନା କରିଛେ। ଅନେକ ସହ ସମୀକରଣ ଯାହାକି ଏକଘାତୀ ନୁହେଁ, ସେମାନଙ୍କୁ ଆବଶ୍ୟକୀୟ ପରିବର୍ତ୍ତନ କରି ଏକଘାତୀ ରୂପକୁ ଅଣାଯାଇ ପାରିବ ଓ ଉପରେ ଆଲୋଚିତ ବୀଜଗାଣିତିକ ପ୍ରଣାଳୀର ଅବଲମ୍ବନରେ ସମାଧାନ କରିହେବ। ମାତ୍ର ଏପରି ଆମେ ସମସ୍ତ କ୍ଷେତ୍ରରେ କରି ପାରିବା ନାହିଁ। କେତେଗୁଡ଼ିଏ ନିର୍ଦ୍ଦିଷ୍ଟ କ୍ଷେତ୍ରରେ ଏପରି କରାଯାଇ ପାରିବ।</p>
+<section class="example"><h4>ଉଦାହରଣ – 8 :</h4><p>ସମାଧାନ କର : $6x + 3y = 7xy$, $3x + 9y = 11xy$ $(x \neq 0,\ y \neq 0)$</p>
+<p class="solution">ସମାଧାନ :</p>
+<p>ଲକ୍ଷ୍ୟ କର ଯେ ଦତ୍ତ ସହସମୀକରଣଦ୍ୱୟ ଏକଘାତୀ ନୁହଁନ୍ତି। କିନ୍ତୁ ଉଭୟ ସମୀକରଣର ଦୁଇ ପାର୍ଶ୍ୱକୁ $xy$ ଦ୍ୱାରା ଭାଗକଲେ $(\because\ x \neq 0$ ଓ $y \neq 0$ ତେବେ $xy \neq 0)$</p>
+<div class="math" data-tex="\frac{6}{y}+\frac{3}{x} = 7, \quad \frac{3}{y}+\frac{9}{x} = 11">\frac{6}{y}+\frac{3}{x} = 7, \quad \frac{3}{y}+\frac{9}{x} = 11</div>
+<p>ଏଠାରେ $\frac{1}{x} = \upsilon$ ଓ $\frac{1}{y} = v$ ଲେଖିଲେ ଦତ୍ତ ସମୀକରଣଦ୍ୱୟର ପରିବର୍ତ୍ତିତ ରୂପ</p>
+<div class="math" data-tex="3\upsilon + 6v - 7 = 0 \text{ ଏବଂ } 9\upsilon + 3v - 11 = 0">3\upsilon + 6v - 7 = 0 \text{ ଏବଂ } 9\upsilon + 3v - 11 = 0</div>
+<p>(ଏଠାରେ $3x3 – 9 x 6 = – 45 \neq 0$)</p>
+<p>ବକ୍ରଗୁଣନ ଦ୍ୱାରା</p>
+<figure><img src="images/fig-1-10.png" width="264" alt="Cross-multiplication diagram showing υ over (6, 3 / –7, –11), v over (–7, –11 / 3, 9) and 1 over (3, 9 / 6, 3) with crossing arrows." loading="lazy"></figure>
+<div class="math" data-tex="\Rightarrow \quad \frac{\upsilon}{-66+21}=\frac{v}{-63+33}=\frac{1}{9-54} \;\Rightarrow\; \frac{\upsilon}{-45}=\frac{v}{-30}=\frac{1}{-45}">\Rightarrow \quad \frac{\upsilon}{-66+21}=\frac{v}{-63+33}=\frac{1}{9-54} \;\Rightarrow\; \frac{\upsilon}{-45}=\frac{v}{-30}=\frac{1}{-45}</div>
+<div class="math" data-tex="\Rightarrow \quad \upsilon=\frac{-45}{-45}=1 \text{ ଓ } v=\frac{-30}{-45}=\frac{2}{3} \;\Rightarrow\; \frac{1}{x}=1 \text{ ଓ } \frac{1}{y}=\frac{2}{3} \Rightarrow x=1 \text{ ଓ } y=\frac{3}{2}">\Rightarrow \quad \upsilon=\frac{-45}{-45}=1 \text{ ଓ } v=\frac{-30}{-45}=\frac{2}{3} \;\Rightarrow\; \frac{1}{x}=1 \text{ ଓ } \frac{1}{y}=\frac{2}{3} \Rightarrow x=1 \text{ ଓ } y=\frac{3}{2}</div>
+<p>$\therefore$ ନିର୍ଣ୍ଣେୟ ସମାଧାନ $\left(1,\ \frac{3}{2}\right)$ ଅଟେ।                    (ଉତ୍ତର)</p>
+</section>
+<section class="example"><h4>ଉଦାହରଣ – 9 :</h4><p>ସମାଧାନ କର : $\frac{1}{2(2x+3y)}+\frac{12}{7(3x-2y)}=\frac{1}{2}$, $\frac{7}{2x+3y}+\frac{4}{3x-2y}=2$</p>
+<p class="solution">ସମାଧାନ :</p>
+<p>ମନେକର  $\upsilon=\frac{1}{2x+3y}$  ଓ  $v=\frac{1}{3x-2y}$                    .......... (i) ∴ ଦତ୍ତ ସହ ସମୀକରଣଦ୍ୱୟର ପରିବର୍ତ୍ତିତ ରୂପ $\frac{1}{2}\upsilon + \frac{12}{7}v = \frac{1}{2}$,  $7\upsilon + 4v = 2$</p>
+<div class="math" data-tex="\text{ଅର୍ଥାତ୍ }\quad 7\upsilon + 24v - 7 = 0 \hspace{3cm} \text{(ii)}">\text{ଅର୍ଥାତ୍ }\quad 7\upsilon + 24v - 7 = 0 \hspace{3cm} \text{(ii)}</div>
+<div class="math" data-tex="7\upsilon + 4v - 2 = 0 \hspace{3cm} \text{(iii)}">7\upsilon + 4v - 2 = 0 \hspace{3cm} \text{(iii)}</div>
+<div class="math" data-tex="\text{(ii)} - \text{(iii)} \Rightarrow 20v - 5 = 0 \Rightarrow v = \frac{1}{4}">\text{(ii)} - \text{(iii)} \Rightarrow 20v - 5 = 0 \Rightarrow v = \frac{1}{4}</div>
+<div class="math" data-tex="\therefore\ 3x - 2y = 4 \hspace{3cm} \text{(iv)}">\therefore\ 3x - 2y = 4 \hspace{3cm} \text{(iv)}</div>
+<p>(iii)ରେ  $v = \frac{1}{4}$  ଲେଖିଲେ ପାଇବା $7\upsilon + 1 - 2 = 0 \Rightarrow \upsilon = \frac{1}{7}$</p>
+<div class="math" data-tex="\therefore\ 2x + 3y = 7 \hspace{3cm} \text{(v)}">\therefore\ 2x + 3y = 7 \hspace{3cm} \text{(v)}</div>
+<div class="math" data-tex="2\text{(iv)} - 3\text{(v)} \Rightarrow 2(3x - 2y) - 3(2x + 3y) = 8 - 21">2\text{(iv)} - 3\text{(v)} \Rightarrow 2(3x - 2y) - 3(2x + 3y) = 8 - 21</div>
+<div class="math" data-tex="\Rightarrow -13y = -13 \Rightarrow y = 1">\Rightarrow -13y = -13 \Rightarrow y = 1</div>
+<p>(iv) ରେ  $y = 1$  ଲେଖିଲେ ପାଇବା $3x - 2 = 4 \Rightarrow x = 2$</p>
+<p>∴ ଦତ୍ତ ସହ ସମୀକରଣଦ୍ୱୟର ନିର୍ଣ୍ଣେୟ ସମାଧାନ (2, 1) ଅଟେ ।              (ଉତ୍ତର)</p>
+</section>
+<h3 class="h-sec" id="s-bishess-aaleaacnaa-p21" data-short="ବିଶେଷ ଆଲୋଚନା"><span class="h-main">ବିଶେଷ ଆଲୋଚନା</span></h3>
+<p>ଦତ୍ତ ଚିତ୍ରଟିକୁ ବିଚାର କର :  $A = \begin{pmatrix} 5 &amp; 7 \\ 2 &amp; 1 \end{pmatrix}$</p>
+<p>ଏହି ଚିତ୍ରରେ ଲେଖାଯାଇଥିବା ସଂଖ୍ୟାଗୁଡ଼ିକୁ ଦୁଇଗୋଟି ଧାଡ଼ି (row) ଓ ଦୁଇଗୋଟି ସ୍ତମ୍ଭ (Column)ରେ ଲେଖାଯାଇଛି ଓ ସମସ୍ତ ଧାଡ଼ି ଓ ସ୍ତମ୍ଭଗୁଡ଼ିକୁ ଦୁଇଟି ବନ୍ଧନୀ ମଧ୍ୟରେ ରଖାଯାଇଛି । ଏହାକୁ A ରୂପେ ନାମିତ କରାଯାଇଛି । ଏଠାରେ A କୁ ଏକ 2 x 2 ମାଟ୍ରିକ୍ସ (Matrix) କୁହାଯାଏ । ଆମେ ମଧ୍ୟ 3 x 3, 4 x 4 ମାଟ୍ରିକ୍ସ ଲେଖିପାରିବା । ଉଚ୍ଚତର ଗଣିତରେ ମାଟ୍ରିକ୍ସର ବ୍ୟବହାର ବହୁଳ ଭାବେ କରାଯାଏ । ଯେହେତୁ ଏଠାରେ ଧାଡ଼ିସଂଖ୍ୟା ସହ ସ୍ତମ୍ଭସଂଖ୍ୟା ସମାନ, ତେଣୁ ଏହି ମାଟ୍ରିକ୍ସଗୁଡ଼ିକୁ ବର୍ଗ ମାଟ୍ରିକ୍ସ (Square matrix) କୁହାଯାଏ । କେବଳ 2 x 2 ମାଟ୍ରିକ୍ସକୁ ଏଠାରେ ବିଚାର କରାଯାଉଛି । ପ୍ରତି ବର୍ଗ ମାଟ୍ରିକ୍ସ ସହ ଗୋଟିଏ ନିର୍ଦ୍ଦିଷ୍ଟ ସଂଖ୍ୟା ସଂପୃକ୍ତ ଓ ଏହାକୁ ବର୍ଗ ମାଟ୍ରିକ୍ସର ଡିଟରମିନାଣ୍ଟ (determinant) କୁହାଯାଏ । ଯଦି ମାଟ୍ରିକ୍ସ $A = \begin{pmatrix} a &amp; b \\ c &amp; d \end{pmatrix}$ ହୁଏ</p>
+<p>ତେବେ ଏହାର ଡିଟରମିନାଣ୍ଟ $| A | = \begin{vmatrix} a &amp; b \\ c &amp; d \end{vmatrix} = ad - bc$ । ଉଦାହରଣ ସ୍ୱରୂପ, $A = \begin{pmatrix} 5 &amp; 7 \\ 2 &amp; 1 \end{pmatrix}$ ହେଲେ</p>
+<p>$| A | = 5 \times 1 - 7 \times 2 = 5 - 14 = -9$ ଅଟେ ।</p>
+<p>ସେହିପରି,  $\begin{vmatrix} 1 &amp; -4 \\ 0 &amp; 3 \end{vmatrix} = 1 \times 3 - 0 \times (-4) = 3 - 0 = 3;$</p>
+<div class="math" data-tex="\begin{vmatrix} 2 &amp; 1 \\ -1 &amp; 3 \end{vmatrix} = 2 \times 3 - 1 \times (-1) = 6 + 1 = 7">\begin{vmatrix} 2 &amp; 1 \\ -1 &amp; 3 \end{vmatrix} = 2 \times 3 - 1 \times (-1) = 6 + 1 = 7</div>
+<p>ଆମେ ଦେଖିଛେ ଯେ, $a_1x + b_1y + c_1 = 0$  ଏବଂ $a_2x + b_2y + c_2 = 0$ ସମୀକରଣ ଦ୍ୱୟର ସମାଧାନ</p>
+<div class="math" data-tex="x = \frac{b_1c_2 - b_2c_1}{a_1b_2 - a_2b_1},\ y = \frac{c_1a_2 - c_2a_1}{a_1b_2 - a_2b_1}">x = \frac{b_1c_2 - b_2c_1}{a_1b_2 - a_2b_1},\ y = \frac{c_1a_2 - c_2a_1}{a_1b_2 - a_2b_1}</div>
+<p>ବର୍ତ୍ତମାନ ଲକ୍ଷ୍ୟ କର :</p>
+<div class="math" data-tex="a_1x + b_1y + c_1 = 0 \Rightarrow a_1x + b_1y = -c_1 \quad \text{ଏବଂ}">a_1x + b_1y + c_1 = 0 \Rightarrow a_1x + b_1y = -c_1 \quad \text{ଏବଂ}</div>
+<div class="math" data-tex="a_2x + b_2y + c_2 = 0 \Rightarrow a_2x + b_2y = -c_2">a_2x + b_2y + c_2 = 0 \Rightarrow a_2x + b_2y = -c_2</div>
+<p>$a_1$, $b_1$, $-c_1$,  $a_2$, $b_2$, $-c_2$ ସଂଖ୍ୟାଗୁଡ଼ିକୁ ନେଇ ନିମ୍ନ ତିନିଗୋଟି ଉତ୍କ୍ରମିନାଙ୍କକୁ ବିଚାର କର :</p>
+<div class="math" data-tex="\Delta = \begin{vmatrix} a_1 &amp; b_1 \\ a_2 &amp; b_2 \end{vmatrix}, \qquad \Delta_x = \begin{vmatrix} -c_1 &amp; b_1 \\ -c_2 &amp; b_2 \end{vmatrix} \quad \text{ଏବଂ} \quad \Delta_y = \begin{vmatrix} a_1 &amp; -c_1 \\ a_2 &amp; -c_2 \end{vmatrix}">\Delta = \begin{vmatrix} a_1 &amp; b_1 \\ a_2 &amp; b_2 \end{vmatrix}, \qquad \Delta_x = \begin{vmatrix} -c_1 &amp; b_1 \\ -c_2 &amp; b_2 \end{vmatrix} \quad \text{ଏବଂ} \quad \Delta_y = \begin{vmatrix} a_1 &amp; -c_1 \\ a_2 &amp; -c_2 \end{vmatrix}</div>
+<p>[$\Delta$ର ପ୍ରଥମ ସ୍ତମ୍ଭକୁ ଧ୍ରୁବକ ସ୍ତମ୍ଭ ଦ୍ୱାରା ବଦଳାଇଲେ]</p>
+<p>[$\Delta$ର ଦ୍ୱିତୀୟ ସ୍ତମ୍ଭକୁ ଧ୍ରୁବକ ସ୍ତମ୍ଭ ଦ୍ୱାରା ବଦଳାଇଲେ]</p>
+<p>ଯେଉଁଠାରେ $\Delta = a_1b_2 - a_2b_1$,    $\Delta_x = -c_1b_2 - b_1(-c_2)$,    $\Delta_y = -a_1c_2 - a_2(-c_1)$</p>
+<div class="math" data-tex="= b_1c_2 - b_2c_1 \qquad\qquad = c_1a_2 - c_2a_1">= b_1c_2 - b_2c_1 \qquad\qquad = c_1a_2 - c_2a_1</div>
+<p>ଅତଏବ ଉତ୍କ୍ରମିନାଙ୍କ ମାଧ୍ୟମରେ ନିର୍ଣ୍ଣେୟ ସମାଧାନ :</p>
+<p>$x = \dfrac{\Delta_x}{\Delta}$ , $y = \dfrac{\Delta_y}{\Delta}$  ଯେଉଁଠାରେ $\Delta \neq 0$  କାରଣ ସମୀକରଣଦ୍ୱୟ ସଙ୍ଗତ ହେବା ଆବଶ୍ୟକ ।</p>
+<p>ବକ୍ରଗୁଣନ ପଦ୍ଧତିରେ ଲବ୍ଧ ସମାଧାନକୁ ଉତ୍କ୍ରମିନାଙ୍କ ମାଧ୍ୟମରେ ଲେଖିଲେ,</p>
+<div class="math" data-tex="\frac{x}{b_1c_2 - b_2c_1} = \frac{y}{c_1a_2 - c_2a_1} = \frac{1}{a_1b_2 - a_2b_1} \Rightarrow \frac{x}{\begin{vmatrix} -c_1 &amp; b_1 \\ -c_2 &amp; b_2 \end{vmatrix}} = \frac{y}{\begin{vmatrix} a_1 &amp; -c_1 \\ a_2 &amp; -c_2 \end{vmatrix}} = \frac{1}{\begin{vmatrix} a_1 &amp; b_1 \\ a_2 &amp; b_2 \end{vmatrix}}">\frac{x}{b_1c_2 - b_2c_1} = \frac{y}{c_1a_2 - c_2a_1} = \frac{1}{a_1b_2 - a_2b_1} \Rightarrow \frac{x}{\begin{vmatrix} -c_1 &amp; b_1 \\ -c_2 &amp; b_2 \end{vmatrix}} = \frac{y}{\begin{vmatrix} a_1 &amp; -c_1 \\ a_2 &amp; -c_2 \end{vmatrix}} = \frac{1}{\begin{vmatrix} a_1 &amp; b_1 \\ a_2 &amp; b_2 \end{vmatrix}}</div>
+<div class="math" data-tex="\Rightarrow \frac{x}{\Delta_x} = \frac{y}{\Delta_y} = \frac{1}{\Delta} \Rightarrow x = \frac{\Delta_x}{\Delta},\ y = \frac{\Delta_y}{\Delta}">\Rightarrow \frac{x}{\Delta_x} = \frac{y}{\Delta_y} = \frac{1}{\Delta} \Rightarrow x = \frac{\Delta_x}{\Delta},\ y = \frac{\Delta_y}{\Delta}</div>
+<p>ଏହାକୁ ସୁପରିଚିତ Cramer&#39;s ନିୟମ କୁହାଯାଏ । ବକ୍ରଗୁଣନ ସୂତ୍ର ହିଁ Cramer&#39;s Rule ର ଅନୁରୂପ ।</p>
+<section class="example"><h4>ଉଦାହରଣ – 10 :</h4><p>Cramer ଙ୍କ ନିୟମ ପ୍ରୟୋଗ କରି ନିମ୍ନ ସହସମୀକରଣ ଦ୍ୱୟର ସମାଧାନ କର ।</p>
+<div class="math" data-tex="x + 2y = -1 \quad \text{ଓ} \quad 2x - 3y = 12">x + 2y = -1 \quad \text{ଓ} \quad 2x - 3y = 12</div>
+<p class="solution">ସମାଧାନ : ଏଠାରେ $\Delta = \begin{vmatrix} 1 &amp; 2 \\ 2 &amp; -3 \end{vmatrix} = 1 \times (-3) - 2 \times 2 = -3 - 4 = -7 \qquad \therefore \Delta \neq 0$</p>
+<div class="math" data-tex="\Delta_x = \begin{vmatrix} -1 &amp; 2 \\ 12 &amp; -3 \end{vmatrix} = (-1) \times (-3) - 2 \times 12 = 3 - 24 = -21">\Delta_x = \begin{vmatrix} -1 &amp; 2 \\ 12 &amp; -3 \end{vmatrix} = (-1) \times (-3) - 2 \times 12 = 3 - 24 = -21</div>
+<div class="math" data-tex="\Delta_y = \begin{vmatrix} 1 &amp; -1 \\ 2 &amp; 12 \end{vmatrix} = 1 \times 12 - 2 \times (-1) = 12 + 2 = 14">\Delta_y = \begin{vmatrix} 1 &amp; -1 \\ 2 &amp; 12 \end{vmatrix} = 1 \times 12 - 2 \times (-1) = 12 + 2 = 14</div>
+<div class="math" data-tex="\therefore\ x = \frac{\Delta_x}{\Delta} = \frac{-21}{-7} = 3,\ y = \frac{\Delta_y}{\Delta} = \frac{14}{-7} = -2">\therefore\ x = \frac{\Delta_x}{\Delta} = \frac{-21}{-7} = 3,\ y = \frac{\Delta_y}{\Delta} = \frac{14}{-7} = -2</div>
+<p>$\therefore$ ନିର୍ଣ୍ଣେୟ ସମାଧାନ : $(x, y) = (3, -2)$</p>
+</section>
+<a class="exercise-card" href="exercises/exercise-1b/exercise.html">
+  <span class="exercise-title">ଅନୁଶୀଳନୀ – 1 (b)</span>
+<span class="exercise-meta">6 questions · pages 23–24</span></a>
+<h2 class="h-sec" id="s-1-7-p24" data-short="1.7 ପାଟିଗଣିତ ପ୍ରଶ୍ନର ସମାଧାନରେ ପ୍ରୟୋଗ"><span class="h-num">1.7</span><span class="h-main">ପାଟିଗଣିତ ପ୍ରଶ୍ନର ସମାଧାନରେ ପ୍ରୟୋଗ</span></h2>
+<p>ଏକ ଅଜ୍ଞାତ ରାଶି ବିଶିଷ୍ଟ ଏକଘାତୀ ସମୀକରଣର ପ୍ରୟୋଗ କରି ଅନେକ ପାଟିଗଣିତ ପ୍ରଶ୍ନମାନଙ୍କ ସମାଧାନ ସହଜରେ କରିଛେ । ସେହିପରି ଦୁଇ ଅଜ୍ଞାତ ରାଶିବିଶିଷ୍ଟ ଏକଘାତୀ ସହ ସମୀକରଣର ପ୍ରୟୋଗରେ ଜଟିଳ ପାଟିଗଣିତ ପ୍ରଶ୍ନମାନଙ୍କ ସହଜ ସମାଧାନ କିପରି କରିପାରିବା, ତାହା ଆଲୋଚନା କରିବା । ଏଥିପାଇଁ ନିମ୍ନରେ ଦିଆଯାଇଥିବା ଉଦାହରଣଗୁଡ଼ିକୁ ଦେଖ ।</p>
+<section class="example"><h4>ଉଦାହରଣ – 11 : ପିତାଙ୍କ ବୟସର ଦୁଇଗୁଣ ଓ ପୁତ୍ରର ବୟସର ସମଷ୍ଟି 105 ବର୍ଷ । ମାତ୍ର ପିତାଙ୍କ ବୟସ ଓ ପୁତ୍ରର ବୟସର ଦୁଇଗୁଣର ସମଷ୍ଟି 75 ବର୍ଷ । ତେବେ ପିତା ଓ ପୁତ୍ରଙ୍କ ବୟସ ନିରୂପଣ କର ।</h4><p class="solution">ସମାଧାନ : ମନେକର ପିତାଙ୍କ ବୟସ = x ଜ ଓ ପୁତ୍ରର ବୟସ = y ବର୍ଷ</p>
+<p>ପ୍ରଶ୍ନାନୁଯାୟୀ $2x + y = 105$ ଓ $x + 2y = 75$</p>
+<p>$\therefore$ ସମୀକରଣଦ୍ୱୟ $2x + y - 105 = 0$  ଓ $x + 2y - 75 = 0$</p>
+<p>ବଜ୍ରଗୁଣନ ପଦ୍ଧତିରେ ସମାଧାନ କଲେ ପାଇବା $\frac{x}{1\,\mathrm{x}\,(-75) - 2\,\mathrm{x}\,(-105)} = \frac{y}{-105\,\mathrm{x}\,1 - (-75)\,\mathrm{x}\,2} = \frac{1}{2\,\mathrm{x}\,2 - 1\,\mathrm{x}\,1}$</p>
+<div class="math" data-tex="\Rightarrow \frac{x}{135} = \frac{y}{45} = \frac{1}{3} \Rightarrow x = \frac{135}{3} = 45 \text{ ଓ } y = \frac{45}{3} = 15">\Rightarrow \frac{x}{135} = \frac{y}{45} = \frac{1}{3} \Rightarrow x = \frac{135}{3} = 45 \text{ ଓ } y = \frac{45}{3} = 15</div>
+<p>$\therefore$ ପିତାଙ୍କ ବୟସ = 45 ବର୍ଷ ଓ ପୁତ୍ରର ବୟସ = 15 ବର୍ଷ ।</p>
+</section>
+<section class="example"><h4>ଉଦାହରଣ – 12 : ଦୁଇଅଙ୍କ ବିଶିଷ୍ଟ ଗୋଟିଏ ସଂଖ୍ୟାର ଅଙ୍କଦ୍ୱୟର ସମଷ୍ଟି 12 । ସଂଖ୍ୟାଟିର ଅଙ୍କ ଦ୍ୱୟର ସ୍ଥାନ ବଦଳାଇ ଲେଖିଲେ ଯେଉଁ ସଂଖ୍ୟା ମିଳିବ ତାହା ମୂଳ ସଂଖ୍ୟା ଠାରୁ 18 ଅଧିକ । ତେବେ ସଂଖ୍ୟାଟି କେତେ ?</h4><p class="solution">ସମାଧାନ : ମନେକର ସଂଖ୍ୟାଟିର ଦଶକ ସ୍ଥାନୀୟ ଅଙ୍କ = x   ଓ ଏକକ ସ୍ଥାନୀୟ ଅଙ୍କ = y</p>
+<p>$\therefore$ ସଂଖ୍ୟାଟି $= 10x + y$  ଓ ଅଙ୍କ ଦ୍ୱୟର ସ୍ଥାନ ବଦଳାଇ ଲେଖିଲେ ନୂତନ ସଂଖ୍ୟାଟି $= 10y+x$</p>
+<p>ପ୍ରଶ୍ନାନୁଯାୟୀ : $x + y = 12$ ...............(i)  ଏବଂ</p>
+<div class="math" data-tex="(10y+x) - (10x + y) = 18 \;\Rightarrow\; 9y - 9x - 18 \;\Rightarrow\; y - x = 2 \;\ldots\; (ii)">(10y+x) - (10x + y) = 18 \;\Rightarrow\; 9y - 9x - 18 \;\Rightarrow\; y - x = 2 \;\ldots\; (ii)</div>
+<p>(i) ଓ (ii) କୁ ଯୋଗ କଲେ ପାଇବା $2y = 14 \Rightarrow y = 7$</p>
+<p>y ର ମୂଲ୍ୟ ସମୀକରଣ (i) ରେ ସ୍ଥାପନ କଲେ ପାଇବା $x + 7 = 12 \Rightarrow x = 5$</p>
+<p>$\therefore$ ନିର୍ଣ୍ଣେୟ ସଂଖ୍ୟାଟି $= 57$                                        (ଉତ୍ତର)</p>
+</section>
+<section class="example"><h4>ଉଦାହରଣ – 13 : ଗୋଟିଏ ଭଗ୍ନାଂଶର ଲବ ଓ ହର ଉଭୟ ରେ 1 ଯୋଗକଲେ ଭଗ୍ନାଂଶଟି $\frac{4}{5}$ ହୁଏ । ଯଦି ଲବ ଓ ହର ଉଭୟରୁ 5 ବିଯୋଗ କଲେ ଭଗ୍ନାଂଶଟି $\frac{1}{2}$ ହୁଏ, ତେବେ ଭଗ୍ନାଂଶଟି କେତେ ?</h4><p class="solution">ସାମାଧାନ : ମନେକର ଭଗ୍ନାଂଶଟି $\frac{x}{y}$</p>
+<p>ପ୍ରଶ୍ନାନୁଯାୟୀ $\frac{x+1}{y+1} = \frac{4}{5}$ ଏବଂ  $\frac{x-5}{y-5} = \frac{1}{2}$</p>
+<div class="math" data-tex="\Rightarrow\; 5x + 5 = 4y + 4 \quad \text{ଏବଂ} \quad 2x - 10 = y - 5">\Rightarrow\; 5x + 5 = 4y + 4 \quad \text{ଏବଂ} \quad 2x - 10 = y - 5</div>
+<div class="math" data-tex="\Rightarrow 5x - 4y + 1 = 0 \ldots\ldots (i) \quad \text{ଓ} \quad 2x - y - 5 = 0 \ldots\ldots (ii)">\Rightarrow 5x - 4y + 1 = 0 \ldots\ldots (i) \quad \text{ଓ} \quad 2x - y - 5 = 0 \ldots\ldots (ii)</div>
+<p>ସମୀକରଣ (i)        $\Rightarrow 5x - 4y + 1 = 0$ ............... (iii)</p>
+<p>ସମୀକରଣ (ii) x 4  $\Rightarrow 8x - 4y - 20 = 0$ ................ (iv)</p>
+<p>ସମୀକରଣ (iii) ରୁ ସମୀକରଣ (iv) ବିଯୋଗ କଲେ, $-3x + 21 = 0 \Rightarrow x = 7$</p>
+<p>x ର ମାନକୁ ସମୀକରଣ (i) ରେ ପ୍ରୟୋଗ କଲେ $5 \times 7 - 4y + 1 = 0 \Rightarrow 4y = 36 \Rightarrow y = 9$</p>
+<p>$\therefore$ ନିର୍ଣ୍ଣେୟ ଭଗ୍ନାଂଶଟି $= \frac{7}{9}$                                  (ଉତ୍ତର)</p>
+</section>
+<section class="example"><h4>ଉଦାହରଣ –  14 : 8 ଜଣ ପୁରୁଷ ଓ 12 ଜଣ ସ୍ତ୍ରୀଲୋକ ଗୋଟିଏ କାର୍ଯ୍ୟକୁ 10 ଦିନରେ ଶେଷ କରିପାରନ୍ତି । 6 ଜଣ ପୁରୁଷ ଓ 8 ଜଣ ସ୍ତ୍ରୀ ଲୋକ ଉକ୍ତ କାର୍ଯ୍ୟକୁ 14 ଦିନରେ ଶେଷ କରି ପାରିଲେ ଜଣେ ସ୍ତ୍ରୀଲୋକ ସେହି କାର୍ଯ୍ୟକୁ କେତେଦିନରେ ଶେଷ କରିପାରିବ ?</h4><p class="solution">ସମାଧାନ : ମନେକର ଜଣେ ପୁରୁଷ x ଦିନରେ ଓ ଜଣେ ସ୍ତ୍ରୀଲୋକ y ଦିନରେ ଶେଷ କରିପାରିବେ ।</p>
+<p>ତେବେ ଜଣେ ପୁରୁଷ ଗୋଟିଏ ଦିନରେ କାର୍ଯ୍ୟର $\frac{1}{x}$ ଅଂଶ କରିପାରେ ଓ ଜଣେ ସ୍ତ୍ରୀ ଲୋକ ଗୋଟିଏ ଦିନରେ $\frac{1}{y}$ ଅଂଶ କରିପାରେ । ମାତ୍ର 8 ଜଣ ପୁରୁଷ ଓ 12 ଜଣ ସ୍ତ୍ରୀ ଲୋକ ଗୋଟିଏ ଦିନରେ କାର୍ଯ୍ୟର $\frac{1}{10}$ ଅଂଶ ଏବଂ ଜଣେ ପୁରୁଷ ଓ 6 ଜଣ ସ୍ତ୍ରୀଲୋକ ଗୋଟିଏ ଦିନରେ କାର୍ଯ୍ୟର $\frac{1}{14}$ ଅଂଶ କରନ୍ତି ।</p>
+<p>ପ୍ରଶ୍ନାନୁଯାୟୀ $\frac{8}{x}+\frac{12}{y}=\frac{1}{10}$, $\frac{6}{x}+\frac{8}{y}=\frac{1}{14}$</p>
+<p>$\frac{1}{x}$ = υ ଓ $\frac{1}{y}$ = ν ଲେଖିଲେ ସମୀକରଣଦ୍ୱୟର ପରିବର୍ତ୍ତିତ ରୂପ ପାଇବା–</p>
+<div class="math" data-tex="80\upsilon + 120\nu - 1 = 0 \ \text{ଏବଂ} \ 84\upsilon + 112\nu - 1 = 0">80\upsilon + 120\nu - 1 = 0 \ \text{ଏବଂ} \ 84\upsilon + 112\nu - 1 = 0</div>
+<p>ସମୀକରଣଦ୍ୱୟର ସମାଧାନ ପାଇଁ ବଜ୍ରଗୁଣନ ପଦ୍ଧତି ଅବଲମ୍ବନ କଲେ</p>
+<div class="math" data-tex="\frac{\upsilon}{120(-1)-112(-1)}=\frac{\nu}{84(-1)-80(-1)}=\frac{1}{80\times112-120\times84}">\frac{\upsilon}{120(-1)-112(-1)}=\frac{\nu}{84(-1)-80(-1)}=\frac{1}{80\times112-120\times84}</div>
+<div class="math" data-tex="\Rightarrow \frac{\upsilon}{-8}=\frac{\nu}{-4}=\frac{1}{-1120} \ \Rightarrow \ \upsilon=\frac{8}{1120}=\frac{1}{140} \ \text{ଓ} \ \nu=\frac{4}{1120}=\frac{1}{280}">\Rightarrow \frac{\upsilon}{-8}=\frac{\nu}{-4}=\frac{1}{-1120} \ \Rightarrow \ \upsilon=\frac{8}{1120}=\frac{1}{140} \ \text{ଓ} \ \nu=\frac{4}{1120}=\frac{1}{280}</div>
+<div class="math" data-tex="\Rightarrow x = 140 \ \text{ଓ} \ y = 280">\Rightarrow x = 140 \ \text{ଓ} \ y = 280</div>
+<p>∴ ଜଣେ ସ୍ତ୍ରୀ ଲୋକ କାର୍ଯ୍ୟଟିକୁ 280 ଦିନରେ ସମାପ୍ତ କରିପାରିବ ।        (ଉତ୍ତର)</p>
+</section>
+<section class="example"><h4>ଉଦାହରଣ – 15 :</h4><p>ଦୁଇଟି ସଂଖ୍ୟାର ଯୋଗଫଳ 15 ଓ ସେମାନଙ୍କ ବ୍ୟୁତ୍କ୍ରମ ରାଶିଦ୍ୱୟର ଯୋଗଫଳ $\frac{3}{10}$ ହେଲେ ସଂଖ୍ୟାଦ୍ୱୟ ନିରୂପଣ କର ।</p>
+<p class="solution">ସମାଧାନ :</p>
+<p>ମନେକର ସଂଖ୍ୟା ଦ୍ୱୟ x ଓ y । ∴ ସେମାନଙ୍କର ବ୍ୟୁତ୍କ୍ରମ $\frac{1}{x}$ ଓ $\frac{1}{y}$ ।</p>
+<p>ପ୍ରଶ୍ନାନୁଯାୟୀ : $x + y = 15$............. (i)     ଏବଂ  $\frac{1}{x}+\frac{1}{y}=\frac{3}{10}$ ............ (ii)</p>
+<div class="math" data-tex="\Rightarrow \frac{x+y}{xy}=\frac{3}{10}\Rightarrow \frac{15}{xy}=\frac{3}{10} \ \ (\text{(i) ର ବ୍ୟବହାର ହେତୁ})">\Rightarrow \frac{x+y}{xy}=\frac{3}{10}\Rightarrow \frac{15}{xy}=\frac{3}{10} \ \ (\text{(i) ର ବ୍ୟବହାର ହେତୁ})</div>
+<div class="math" data-tex="\Rightarrow xy = \frac{15\,x\,10}{3}=50">\Rightarrow xy = \frac{15\,x\,10}{3}=50</div>
+<p>କିନ୍ତୁ $x - y = \pm\sqrt{(x+y)^2-4xy}=\pm\sqrt{15^2-4\,x\,50}=\pm\sqrt{25}=\pm5$</p>
+<p>∴ $x - y = 5$ ................... (iii)   କିମ୍ବା $x - y = -5$ ................ (iv)</p>
+<p>(i) ଓ (iii) କୁ ସମାଧାନ କଲେ ପାଇବା $x = 10, y = 5$</p>
+<p>କିମ୍ବା (i) ଓ (iv) କୁ ସମାଧାନ କଲେ $x = 5$ ଓ $y = 10$</p>
+<p>ସୁତରାଂ ସଂଖ୍ୟା ଦ୍ୱୟ 10 ଓ 5 ।                    (ଉତ୍ତର)</p>
+</section>
+<a class="exercise-card" href="exercises/exercise-1c/exercise.html">
+  <span class="exercise-title">ଅନୁଶୀଳନୀ – 1 (c)</span>
+<span class="exercise-meta">20 questions · pages 27–28</span></a>
+
+</main>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+<script>
+// Chapter menu: close on outside click, Escape or picking an item; mark the current section.
+(function () {
+  var menu = document.querySelector(".crumb-menu");
+  if (!menu) return;
+  document.addEventListener("click", function (e) {
+    if (menu.open && !menu.contains(e.target)) menu.open = false;
+  });
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && menu.open) { menu.open = false; menu.querySelector("summary").focus(); }
+  });
+  menu.querySelectorAll(".menu a").forEach(function (a) {
+    a.addEventListener("click", function () { menu.open = false; });
+  });
+  menu.addEventListener("toggle", function () {
+    if (!menu.open) return;
+    var sec = document.querySelector(".crumb-section:not([hidden]) a");
+    var id = sec ? sec.getAttribute("href").slice(1) : null;
+    var current = null;
+    menu.querySelectorAll("li[data-anchor]").forEach(function (li) {
+      var on = li.dataset.anchor === id;
+      li.classList.toggle("current", on);
+      if (on) current = li;
+    });
+    if (current) current.scrollIntoView({ block: "nearest" });
+  });
+})();
+// Last breadcrumb follows the section heading currently at the top of the page.
+(function () {
+  var crumb = document.querySelector(".crumb-section");
+  if (!crumb) return;
+  var heads = Array.prototype.slice.call(document.querySelectorAll("main h2, main h3"));
+  var bar = document.querySelector(".topbar");
+  var ticking = false;
+  function update() {
+    ticking = false;
+    var limit = bar.offsetHeight + 24, current = null;
+    for (var i = 0; i < heads.length; i++) {
+      if (heads[i].getBoundingClientRect().top <= limit) current = heads[i]; else break;
+    }
+    if (current) {
+      crumb.querySelector("a").textContent = current.dataset.short || current.textContent;
+      crumb.querySelector("a").href = "#" + current.id;
+      crumb.hidden = false;
+    } else {
+      crumb.hidden = true;
+    }
+  }
+  window.addEventListener("scroll", function () {
+    if (!ticking) { ticking = true; requestAnimationFrame(update); }
+  }, { passive: true });
+  update();
+})();
+window.addEventListener("load", function () {
+  if (!window.katex) return;
+  document.querySelectorAll(".math[data-tex]").forEach(function (el) {
+    katex.render(el.dataset.tex, el, { displayMode: true, throwOnError: false });
+  });
+  renderMathInElement(document.body, {
+    delimiters: [{ left: "$", right: "$", display: false }],
+    ignoredClasses: ["math"],
+    throwOnError: false
+  });
+});
+</script>
+</body>
+</html>
