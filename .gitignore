@@ -1,0 +1,15 @@
+# source books and generated output (copyrighted material)
+/Books/
+/output/
+/.work/
+
+# environment
+.venv/
+.env
+
+# python
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
